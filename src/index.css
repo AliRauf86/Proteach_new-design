@@ -1,0 +1,213 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* Definition of the design system. All colors, gradients, fonts, etc should be defined here. 
+All colors MUST be HSL.
+*/
+
+@layer base {
+  :root {
+    --background: 220 20% 97%;
+    --foreground: 220 60% 15%;
+
+    --card: 0 0% 100%;
+    --card-foreground: 220 60% 15%;
+
+    --popover: 0 0% 100%;
+    --popover-foreground: 220 60% 15%;
+
+    --primary: 220 60% 15%;
+    --primary-foreground: 0 0% 100%;
+
+    --secondary: 220 15% 92%;
+    --secondary-foreground: 220 60% 15%;
+
+    --muted: 220 15% 92%;
+    --muted-foreground: 220 20% 50%;
+
+    --accent: 340 75% 50%;
+    --accent-foreground: 0 0% 100%;
+
+    --destructive: 0 84.2% 60.2%;
+    --destructive-foreground: 0 0% 100%;
+
+    --border: 220 15% 85%;
+    --input: 220 15% 85%;
+    --ring: 340 75% 50%;
+
+    --radius: 0.75rem;
+
+    /* Custom design tokens */
+    --navy: 220 60% 15%;
+    --navy-light: 220 50% 25%;
+    --navy-dark: 220 70% 10%;
+    --magenta: 340 75% 50%;
+    --magenta-light: 340 70% 60%;
+    --magenta-dark: 340 80% 40%;
+    
+    /* Gradients */
+    --gradient-primary: linear-gradient(135deg, hsl(220 60% 15%) 0%, hsl(220 50% 25%) 100%);
+    --gradient-accent: linear-gradient(135deg, hsl(340 75% 50%) 0%, hsl(340 70% 60%) 100%);
+    --gradient-hero: linear-gradient(135deg, hsl(220 70% 10%) 0%, hsl(220 60% 15%) 50%, hsl(220 50% 20%) 100%);
+    
+    /* Shadows */
+    --shadow-glow: 0 0 40px hsl(340 75% 50% / 0.3);
+    --shadow-card: 0 10px 30px -10px hsl(220 60% 15% / 0.2);
+    --shadow-elegant: 0 20px 60px -15px hsl(220 60% 15% / 0.3);
+    
+    /* Animations */
+    --transition-smooth: all 0.4s cubic-bezier(0.4, 0, 0.2, 1);
+    --transition-bounce: all 0.6s cubic-bezier(0.68, -0.55, 0.265, 1.55);
+
+    --sidebar-background: 0 0% 98%;
+    --sidebar-foreground: 240 5.3% 26.1%;
+    --sidebar-primary: 240 5.9% 10%;
+    --sidebar-primary-foreground: 0 0% 98%;
+    --sidebar-accent: 240 4.8% 95.9%;
+    --sidebar-accent-foreground: 240 5.9% 10%;
+    --sidebar-border: 220 13% 91%;
+    --sidebar-ring: 217.2 91.2% 59.8%;
+  }
+
+  .dark {
+    --background: 220 60% 15%;
+    --foreground: 0 0% 100%;
+
+    --card: 220 60% 15%;
+    --card-foreground: 0 0% 100%;
+
+    --popover: 220 60% 15%;
+    --popover-foreground: 0 0% 100%;
+
+    --primary: 0 0% 100%;
+    --primary-foreground: 220 60% 15%;
+
+    --secondary: 220 50% 25%;
+    --secondary-foreground: 0 0% 100%;
+
+    --muted: 220 50% 25%;
+    --muted-foreground: 220 15% 70%;
+
+    --accent: 340 75% 50%;
+    --accent-foreground: 0 0% 100%;
+
+    --destructive: 0 62.8% 30.6%;
+    --destructive-foreground: 0 0% 100%;
+
+    --border: 220 50% 25%;
+    --input: 220 50% 25%;
+    --ring: 340 75% 50%;
+    
+    --sidebar-background: 240 5.9% 10%;
+    --sidebar-foreground: 240 4.8% 95.9%;
+    --sidebar-primary: 224.3 76.3% 48%;
+    --sidebar-primary-foreground: 0 0% 100%;
+    --sidebar-accent: 240 3.7% 15.9%;
+    --sidebar-accent-foreground: 240 4.8% 95.9%;
+    --sidebar-border: 240 3.7% 15.9%;
+    --sidebar-ring: 217.2 91.2% 59.8%;
+  }
+}
+
+@layer base {
+  * {
+    @apply border-border;
+  }
+
+  body {
+    @apply bg-background text-foreground;
+    font-feature-settings: "rlig" 1, "calt" 1;
+  }
+  
+  html {
+    scroll-behavior: smooth;
+  }
+}
+
+@layer utilities {
+  /* Glassmorphism */
+  .glass {
+    @apply bg-white/10 backdrop-blur-lg border border-white/20;
+  }
+  
+  .glass-dark {
+    @apply bg-primary/10 backdrop-blur-lg border border-primary/20;
+  }
+  
+  /* Hover effects */
+  .hover-lift {
+    transition: all 0.3s ease;
+  }
+  
+  .hover-lift:hover {
+    transform: translateY(-0.5rem);
+    box-shadow: 0 20px 60px -15px hsl(220 60% 15% / 0.3);
+  }
+  
+  .hover-glow {
+    transition: all 0.3s ease;
+  }
+  
+  .hover-glow:hover {
+    box-shadow: 0 0 30px rgba(217, 28, 92, 0.4);
+  }
+  
+  /* Gradient text */
+  .gradient-text {
+    @apply bg-gradient-to-r from-accent to-magenta-light bg-clip-text text-transparent;
+  }
+  
+  /* Animated gradient background */
+  .gradient-animated {
+    background: linear-gradient(
+      -45deg,
+      hsl(220 60% 15%),
+      hsl(220 50% 25%),
+      hsl(340 75% 50%),
+      hsl(220 60% 15%)
+    );
+    background-size: 400% 400%;
+    animation: gradient 15s ease infinite;
+  }
+  
+  @keyframes gradient {
+    0% {
+      background-position: 0% 50%;
+    }
+    50% {
+      background-position: 100% 50%;
+    }
+    100% {
+      background-position: 0% 50%;
+    }
+  }
+  
+  /* Floating animation */
+  .float {
+    animation: float 6s ease-in-out infinite;
+  }
+  
+  @keyframes float {
+    0%, 100% {
+      transform: translateY(0px);
+    }
+    50% {
+      transform: translateY(-20px);
+    }
+  }
+  
+  /* Pulse glow */
+  .pulse-glow {
+    animation: pulse-glow 2s ease-in-out infinite;
+  }
+  
+  @keyframes pulse-glow {
+    0%, 100% {
+      box-shadow: 0 0 20px rgba(217, 28, 92, 0.3);
+    }
+    50% {
+      box-shadow: 0 0 40px rgba(217, 28, 92, 0.6);
+    }
+  }
+}
