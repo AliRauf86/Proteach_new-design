@@ -49,6 +49,16 @@ const TrainingPortfolio = () => {
         "This portfolio focuses on quality management systems, occupational health and safety, and sustainable practices for long-term organizational success."
       ),
     },
+
+    <Button
+  asChild
+  size="lg"
+  className="mt-8 bg-accent hover:bg-accent/90"
+>
+  <a href="/training-catalog.pdf" download>
+    Təlim kurslarının kataloqunu yüklə (PDF)
+  </a>
+</Button>
   ];
 
   return (
