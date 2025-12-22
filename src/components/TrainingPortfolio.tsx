@@ -1,4 +1,4 @@
-import { Shield, Brain, Building, Scale, Lock, Award } from "lucide-react";
+import { Shield, Brain, Building, Scale, Lock, Award, FileText } from "lucide-react";
 import { useLanguage } from "@/contexts/LanguageContext";
 import { Button } from "@/components/ui/button";
 
@@ -93,11 +93,11 @@ const TrainingPortfolio = () => {
           {/* ✅ 6-cı element – Button kart */}
   <div className="glass p-8 rounded-2xl hover-lift flex flex-col items-center justify-center text-center">
     <div className="w-16 h-16 rounded-full bg-accent/20 flex items-center justify-center mb-6">
-      <Award className="w-8 h-8 text-accent" />
+      <FileText className="w-8 h-8 text-accent" />
     </div>
 
     <h3 className="text-2xl font-bold mb-4 text-white">
-      Təlim kataloqu
+      Bütün Təlim Kurslarının kataloqu
     </h3>
 
     <Button
