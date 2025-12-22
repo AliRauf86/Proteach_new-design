@@ -117,7 +117,7 @@ const Training = () => {
     size="lg"
     className="px-10 bg-accent hover:bg-accent/90"
     onClick={() => {
-      window.location.href = "/portfolio";
+      window.location.href = "/training/portfolio";
     }}
   >
     {t("Bütün təlimlər", "View All Trainings")}
