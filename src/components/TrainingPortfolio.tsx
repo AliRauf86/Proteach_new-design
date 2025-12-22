@@ -106,7 +106,7 @@ const TrainingPortfolio = () => {
       PDF yüklə
     </Button>
   </div>
-</div>
+
       </div>
       </div>
     </section>
