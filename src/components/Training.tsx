@@ -15,8 +15,8 @@ const Training = () => {
       subtitle: "Information Security Management System",
       description: "Məlumat təhlükəsizliyi idarəetmə sistemlərinin tətbiqi və idarə edilməsi",
       details:
-        "ISO/IEC 27001 beynəlxalq standartı təşkilatların informasiya təhlükəsizliyi idarəetmə sistemlərini (ISMS) qurmaq, həyata keçirmək, saxlamaq və davamlı olaraq təkmilləşdirmək üçün tələbləri müəyyən edir. Bu təlim proqramı sizə risk qiymətləndirməsi, nəzarət tədbirləri və auditing bacarıqları öyrədəcək.",
-      duration: "5 gün",
+        "ISO/IEC 27001 beynəlxalq standartı təşkilatların informasiya təhlükəsizliyi idarəetmə sistemlərini (ISMS) qurmaq, həyata keçirmək, saxlamaq və davamlı olaraq təkmilləşdirmək üçün tələbləri müəyyən edir. Bu təlim proqramı sizə risk qiymətləndirməsi, nəzarət tədbirləri və audit bacarıqlarını öyrədəcək.",
+      duration: "2/5 gün" Transition – 2 gün,
       level: "Fundamental / Lead Implementer / Lead Auditor",
     },
     {
