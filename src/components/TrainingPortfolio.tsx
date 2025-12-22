@@ -102,7 +102,7 @@ const TrainingPortfolio = () => {
 
     <Button
       className="bg-accent hover:bg-accent/90"
-      onClick={() => window.open("/public/training-catalog.pdf", "_blank")}
+      onClick={() => window.open("/training-catalog.pdf", "_blank")}
     >
       PDF yüklə
     </Button>
