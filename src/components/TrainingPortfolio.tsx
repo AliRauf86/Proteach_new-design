@@ -1,5 +1,6 @@
 import { Shield, Brain, Building, Scale, Lock, Award } from "lucide-react";
 import { useLanguage } from "@/contexts/LanguageContext";
+import { Button } from "@/components/ui/button";
 
 const TrainingPortfolio = () => {
   const { t } = useLanguage();
