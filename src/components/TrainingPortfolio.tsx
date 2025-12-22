@@ -50,16 +50,7 @@ const TrainingPortfolio = () => {
       ),
     },
 
-    <Button
-  asChild
-  size="lg"
-  className="mt-8 bg-accent hover:bg-accent/90"
->
-  <a href="/training-catalog.pdf" download>
-    Təlim kurslarının kataloqunu yüklə (PDF)
-  </a>
-</Button>
-  ];
+    ];
 
   return (
     <section className="py-20 bg-navy relative overflow-hidden">
@@ -97,6 +88,26 @@ const TrainingPortfolio = () => {
               )}
             </div>
           ))}
+
+          <div className="glass p-8 rounded-2xl hover-lift group flex flex-col items-center justify-center text-center">
+    <div className="w-16 h-16 rounded-full bg-accent/20 flex items-center justify-center mb-6">
+      <Award className="w-8 h-8 text-accent" />
+    </div>
+
+    <h3 className="text-2xl font-bold mb-4 text-white">
+      Təlim kataloqu
+    </h3>
+
+    <Button
+      className="bg-accent hover:bg-accent/90"
+      onClick={() => {
+        window.open("/training-catalog.pdf", "_blank");
+      }}
+    >
+      PDF yüklə
+    </Button>
+  </div>
+</div>
         </div>
       </div>
     </section>
