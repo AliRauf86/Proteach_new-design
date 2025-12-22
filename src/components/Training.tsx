@@ -35,8 +35,8 @@ const Training = () => {
       subtitle: "Cybersecurity Training",
       description: "Müasir kibertəhdidlərə qarşı müdafiə strategiyaları",
       details:
-        "Kibertəhlükəsizlik təlimi şəbəkə təhlükəsizliyi, təhdid kəşfiyyatı, hadisələrə cavab vermə və zərərli proqram təhlili kimi mövzuları əhatə edir. Praktik ssenarilərlə real dünya təhdidlərinə qarşı müdafiə bacarıqları inkişaf etdiririk.",
-      duration: "3-5 gün",
+        "Kibertəhlükəsizlik təlimi şəbəkə təhlükəsizliyi, təhdid kəşfiyyatı, hadisələrə cavab vermə və zərərli proqram təhlili kimi mövzuları əhatə edir. Praktik ssenarilərlə real dünya təhdidlərinə qarşı müdafiə bacarıqlarını inkişaf etdiririk.",
+      duration: "2-5 gün",
       level: "Beginner to Advanced",
     },
     {
