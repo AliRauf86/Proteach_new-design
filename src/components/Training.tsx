@@ -46,7 +46,7 @@ const Training = () => {
       description: "AI texnologiyalarının biznesə tətbiqi və idarə edilməsi",
       details:
         "Süni intellekt və maşın öyrənməsi texnologiyalarının biznes proseslərinə inteqrasiyası üzrə təlim. AI strategiyaları, etika məsələləri, və praktik tətbiq üsulları öyrədilir.",
-      duration: "4 gün",
+      duration: "2-5 gün",
       level: "Foundation / Professional",
     },
     {
