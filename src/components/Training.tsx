@@ -146,7 +146,7 @@ const Training = () => {
                     <p className="font-semibold text-navy">{courses[selectedCourse].level}</p>
                   </div>
                 </div>
-                <Button className="w-full bg-accent hover:bg-accent/90" size="lg" onClick={() => navigate("/contact")}>
+                <Button className="w-full bg-accent hover:bg-accent/90" size="lg" onClick={() => navigate("contact")}>
                   {t("Qeydiyyatdan keçin", "Register Now")}
                 </Button>
               </div>
