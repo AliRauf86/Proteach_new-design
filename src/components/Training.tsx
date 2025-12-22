@@ -66,8 +66,8 @@ const Training = () => {
       description: "Biznes proseslərinin rəqəmsallaşdırılması strategiyaları",
       details:
         "Rəqəmsal transformasiya təlimi təşkilatların texnoloji inkişaf strategiyalarını planlaşdırmaq və həyata keçirmək üçün lazımi bilik və bacarıqları təqdim edir. Cloud computing, IoT və data analytics kimi mövzular əhatə olunur.",
-      duration: "3 gün",
-      level: "Executive / Professional",
+      duration: "5 gün",
+      level: "Professional",
     },
   ];
 
