@@ -56,8 +56,8 @@ const Training = () => {
       description: "Keyfiyyət idarəetmə sistemlərinin qurulması və inkişafı",
       details:
         "ISO 9001 keyfiyyət idarəetmə sistemləri standartı üzrə sertifikasiya təlimi. Proses yanaşması, müştəri məmnuniyyəti və davamlı təkmilləşdirmə prinsipləri əsasında təşkilatın keyfiyyət performansını artırmaq üsulları öyrədilir.",
-      duration: "5 gün",
-      level: "Foundation / Lead Auditor",
+      duration: "2 / 5 gün",
+      level: "Foundation / Lead Implementer / Lead Auditor",
     },
     {
       icon: Network,
