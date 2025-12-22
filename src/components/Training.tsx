@@ -147,6 +147,7 @@ const Training = () => {
                   </div>
                 </div>
                 <Button className="w-full bg-accent hover:bg-accent/90" size="lg" 
+                  onClick={() => {
                   setSelectedCourse(null); // Dialog-u bağlayır
     window.location.href = "/contact"; // contact səhifəsinə yönləndirir
   }}>
