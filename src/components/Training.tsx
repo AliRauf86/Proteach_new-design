@@ -111,6 +111,18 @@ const Training = () => {
             </div>
           ))}
         </div>
+
+        <div className="mt-16 text-center">
+  <Button
+    size="lg"
+    className="px-10 bg-accent hover:bg-accent/90"
+    onClick={() => {
+      window.location.href = "/training";
+    }}
+  >
+    {t("Bütün təlimlər", "View All Trainings")}
+  </Button>
+</div>
       </div>
 
       {/* Course Details Dialog */}
