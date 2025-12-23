@@ -38,11 +38,11 @@ const About = () => {
           <div className="space-y-8 text-white animate-fade-in-up">
             <div>
               <h2 className="text-4xl lg:text-5xl font-bold mb-4">
-                Haqqımızda <span className="gradient-text">PROTEACH</span>
+                Haqqımızda <span className="gradient-text"> </span>
               </h2>
               <p className="text-lg text-gray-300 leading-relaxed">
-                Məqsədimiz müasir texnologiyalar və ən yaxşı təcrübələrlə təchiz olunmuş mütəxəssislər
-                yetişdirmək və bizneslərin ITSM proseslərini optimallaşdırmaqdır.
+                ProTeach beynəlxalq səviyyədə tanınmış idarəetmə sistemləri, 
+                ITSM təcrübələri və təşkilati inkişaf həlləri üzrə ixtisaslaşmış peşəkar təlim və məsləhət mərkəzidir.
               </p>
             </div>
 
