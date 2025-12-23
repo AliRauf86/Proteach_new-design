@@ -159,7 +159,9 @@ const Header = () => {
               <span className="text-sm font-medium">{language === "az" ? "EN" : "AZ"}</span>
             </button>
             <Button variant="default" className="bg-accent hover:bg-accent/90"
-              onClick={() => navigate("/contact")}>
+              onClick={() => {
+              window.location.href = "/contact"; 
+  }}>
               {t("Qeydiyyat", "Register")}
             </Button>
           </div>
