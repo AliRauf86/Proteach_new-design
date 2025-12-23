@@ -72,8 +72,8 @@ const About = () => {
                   <div>
                     <h3 className="text-xl font-bold mb-2">Vizyonumuz</h3>
                     <p className="text-gray-300">
-                      IT xidmət idarəetməsi və informasiya təhlükəsizliyi sahəsində regionda ən etibarlı
-                      tədris və məsləhət mərkəzi olmaq.
+                      Təlim, sertifikatlaşdırma və konsultasiya xidmətləri ilə təşkilatları 
+                      qlobal standartlara və əməliyyat mükəmməlliyinə aparmaqdır.
                     </p>
                   </div>
                 </div>
