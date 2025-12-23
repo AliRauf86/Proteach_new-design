@@ -158,7 +158,8 @@ const Header = () => {
               <Languages className="w-4 h-4" />
               <span className="text-sm font-medium">{language === "az" ? "EN" : "AZ"}</span>
             </button>
-            <Button variant="default" className="bg-accent hover:bg-accent/90">
+            <Button variant="default" className="bg-accent hover:bg-accent/90"
+              onClick={() => navigate("/contact")}>
               {t("Qeydiyyat", "Register")}
             </Button>
           </div>
