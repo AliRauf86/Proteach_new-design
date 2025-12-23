@@ -42,7 +42,7 @@ const About = () => {
               </h2>
               <p className="text-lg text-gray-300 leading-relaxed">
                 ProTeach beynəlxalq səviyyədə tanınmış idarəetmə sistemləri, 
-                ITSM təcrübələri və təşkilati inkişaf həlləri üzrə ixtisaslaşmış peşəkar təlim və məsləhət mərkəzidir.
+                ITSM təcrübələri və təşkilati inkişaf həlləri üzrə ixtisaslaşmış peşəkar təlim və konsultasiya mərkəzidir.
               </p>
             </div>
 
@@ -56,8 +56,8 @@ const About = () => {
                   <div>
                     <h3 className="text-xl font-bold mb-2">Missiyamız</h3>
                     <p className="text-gray-300">
-                      Azərbaycanda ITSM sahəsində peşəkar bilik və təcrübəni genişləndirmək, beynəlxalq
-                      standartlara uyğun mütəxəssislər yetişdirmək.
+                      Keyfiyyət, innovasiya və davamlı təkmilləşdirmə öhdəliyi ilə ProTeach müxtəlif sənaye sahələrində 
+                      fərdlərin və təşkilatların peşəkar bacarıqlarını gücləndirməyi hədəfləyir.
                     </p>
                   </div>
                 </div>
