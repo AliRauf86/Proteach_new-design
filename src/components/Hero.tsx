@@ -50,7 +50,7 @@ const Hero = () => {
   const prevSlide = () => setCurrentSlide((prev) => (prev - 1 + slides.length) % slides.length);
 
   return (
-    <section className="relative min-h-screen flex items-center overflow-hidden bg-navy">
+    <section className="relative min-h-screen pt-28 lg:pt-32 flex items-start lg:items-center overflow-hidden bg-navy">
       {/* Background with overlay */}
       <div className="absolute inset-0 z-0">
         <img src={heroBg} alt="Hero Background" className="w-full h-full object-cover" />
