@@ -24,7 +24,7 @@ const About = () => {
               <img
                 src={consultant}
                 alt="About PROTEACH"
-                className="relative rounded-3xl shadow-2xl w-full h-[420px] md:h-[520px] lg:h-[600px] object-cover object-top border-4 border-accent/30"
+                className="relative rounded-3xl shadow-2xl w-full h-[420px] md:h-[520px] lg:h-[600px] object-cover border-4 border-accent/30"
               />
             </div>
             {/* Floating badge */}
