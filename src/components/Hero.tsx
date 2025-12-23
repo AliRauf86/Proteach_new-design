@@ -94,7 +94,7 @@ const Hero = () => {
             <Button
               size="lg"
               className="bg-accent hover:bg-accent/90 text-white font-semibold text-lg px-8 py-6 rounded-full hover-glow"
-            onClick={() => window.open("/Consultation")}
+            onClick={() => window.open("/consultation")}
               >
               {t("Ətraflı", "Learn More")}
             </Button>
