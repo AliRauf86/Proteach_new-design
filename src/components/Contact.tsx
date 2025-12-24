@@ -17,6 +17,13 @@ const Contact = () => {
 
   const handleSubmit = (e: React.FormEvent) => {
     e.preventDefault();
+   
+    await fetch("https://formspree.io/f/xeejwkvk", {
+      method: "POST",
+      headers: { "Content-Type": "application/json" },
+      body: JSON.stringify(formData),
+    });
+    
     toast.success("Mesajınız göndərildi! Tezliklə sizinlə əlaqə saxlayacağıq.");
     setFormData({ name: "", email: "", phone: "", subject: "", message: "" });
   };
@@ -92,9 +99,7 @@ const Contact = () => {
 
           {/* Contact Form */}
           <div className="animate-fade-in-up">
-            <form onSubmit={async (e) => {
-    e.preventDefault(); // səhifənin yenilənməsinin qarşısı alınır
-    const formspreeUrl = "https://formspree.io/f/xeejwkvk";} method="POST" className="glass-dark rounded-2xl p-8 space-y-6">
+            <form onSubmit={handleSubmit} className="glass-dark rounded-2xl p-8 space-y-6">
               
       <h3 className="text-2xl font-bold text-navy mb-6">Mesaj Göndərin</h3>
 
