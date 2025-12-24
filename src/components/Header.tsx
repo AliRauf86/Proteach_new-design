@@ -180,7 +180,7 @@ const Header = () => {
           <nav className="lg:hidden mt-4 pb-4 space-y-1 animate-fade-in text-white">
             <Link
               to="/"
-              className="block text-sm font-medium text-foreground hover:text-accent transition-colors py-2"
+              className="block text-sm font-medium text-white hover:text-accent transition-colors py-2"
               onClick={() => setIsMobileMenuOpen(false)}
             >
               {t("Ana Səhifə", "Home")}
@@ -200,7 +200,7 @@ const Header = () => {
                 <div className="pl-4 space-y-1 border-l-2 border-accent/30 ml-2">
                   <Link
                     to="/training"
-                    className="block text-sm text-muted-foreground hover:text-accent transition-colors py-2"
+                    className="block text-sm text-muted-white hover:text-accent transition-colors py-2"
                     onClick={() => setIsMobileMenuOpen(false)}
                   >
                     {t("Bütün Təlimlər", "All Training")}
@@ -209,7 +209,7 @@ const Header = () => {
                     <Link
                       key={item.href}
                       to={item.href}
-                      className="block text-sm text-muted-foreground hover:text-accent transition-colors py-2"
+                      className="block text-sm text-muted-white hover:text-accent transition-colors py-2"
                       onClick={() => setIsMobileMenuOpen(false)}
                     >
                       {t(item.labelAz, item.labelEn)}
@@ -223,7 +223,7 @@ const Header = () => {
             <div>
               <button
                 onClick={() => setIsMobileAboutOpen(!isMobileAboutOpen)}
-                className="flex items-center justify-between w-full text-sm font-medium text-foreground hover:text-accent transition-colors py-2"
+                className="flex items-center justify-between w-full text-sm font-medium text-white hover:text-accent transition-colors py-2"
               >
                 {t("Haqqımızda", "About")}
                 <ChevronDown className={`w-4 h-4 transition-transform ${isMobileAboutOpen ? "rotate-180" : ""}`} />
@@ -249,7 +249,7 @@ const Header = () => {
               <Link
                 key={item.href}
                 to={item.href}
-                className="block text-sm font-medium text-foreground hover:text-accent transition-colors py-2"
+                className="block text-sm font-medium text-white hover:text-accent transition-colors py-2"
                 onClick={() => setIsMobileMenuOpen(false)}
               >
                 {t(item.labelAz, item.labelEn)}
