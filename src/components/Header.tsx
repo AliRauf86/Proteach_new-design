@@ -190,7 +190,7 @@ const Header = () => {
             <div>
               <button
                 onClick={() => setIsMobileTrainingOpen(!isMobileTrainingOpen)}
-                className="flex items-center justify-between w-full text-sm font-medium text-foreground hover:text-accent transition-colors py-2"
+                className="flex items-center justify-between w-full text-sm font-medium text-white hover:text-accent transition-colors py-2"
               >
                 {t("Təlimlər", "Training")}
                 <ChevronDown className={`w-4 h-4 transition-transform ${isMobileTrainingOpen ? "rotate-180" : ""}`} />
@@ -200,7 +200,7 @@ const Header = () => {
                 <div className="pl-4 space-y-1 border-l-2 border-accent/30 ml-2">
                   <Link
                     to="/training"
-                    className="block text-sm text-muted-white hover:text-accent transition-colors py-2"
+                    className="block text-sm text-muted-foreground hover:text-accent transition-colors py-2"
                     onClick={() => setIsMobileMenuOpen(false)}
                   >
                     {t("Bütün Təlimlər", "All Training")}
