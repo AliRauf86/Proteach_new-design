@@ -20,7 +20,7 @@ const Contact = () => {
     e.preventDefault();
    
     await emailjs.send(
-      'service_jtazplm',
+      'service_37i23cj',
       'template_hzpcws3',
       {
         from_name: formData.name,
