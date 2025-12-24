@@ -177,7 +177,7 @@ const Header = () => {
 
         {/* Mobile Menu */}
         {isMobileMenuOpen && (
-          <nav className="lg:hidden mt-4 pb-4 space-y-1 animate-fade-in">
+          <nav className="lg:hidden mt-4 pb-4 space-y-1 animate-fade-in text-white">
             <Link
               to="/"
               className="block text-sm font-medium text-foreground hover:text-accent transition-colors py-2"
