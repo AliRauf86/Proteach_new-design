@@ -92,7 +92,7 @@ const Contact = () => {
 
           {/* Contact Form */}
           <div className="animate-fade-in-up">
-            <form onSubmit={handleSubmit} className="glass-dark rounded-2xl p-8 space-y-6">
+            <form action="https://formspree.io/f/xeejwkvk" method="POST" className="glass-dark rounded-2xl p-8 space-y-6">
               <h3 className="text-2xl font-bold text-navy mb-6">Mesaj Göndərin</h3>
 
               <div>
