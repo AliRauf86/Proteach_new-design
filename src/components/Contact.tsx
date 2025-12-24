@@ -157,9 +157,9 @@ const Contact = () => {
                     <SelectValue placeholder="Mövzu seçin" />
                   </SelectTrigger>
                   <SelectContent>
-                    <SelectItem value="consultation">Konsultasiya</SelectItem>
-                    <SelectItem value="corporate">Korporativ təlim</SelectItem>
-                    <SelectItem value="online">Onlayn təlim</SelectItem>
+                    <SelectItem value="Consultation">Konsultasiya</SelectItem>
+                    <SelectItem value="Corporate training">Korporativ təlim</SelectItem>
+                    <SelectItem value="Online training">Onlayn təlim</SelectItem>
                   </SelectContent>
                 </Select>
               </div>
