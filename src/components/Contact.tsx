@@ -23,11 +23,13 @@ const Contact = () => {
       'service_jtazplm',
       'template_s9vdh59',
       {
+        to_email: 'info@proteach.az',
         from_name: formData.name,
         from_email: formData.email,
         phone: formData.phone,
         subject: formData.subject,
         message: formData.message,
+        reply_to: formData.email,
       },
       '4IPEtW6qlCBW7klXl'
     );
