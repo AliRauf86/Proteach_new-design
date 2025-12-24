@@ -19,11 +19,18 @@ const Contact = () => {
   const handleSubmit = async (e: React.FormEvent) => {
     e.preventDefault();
    
-    await fetch("https://formspree.io/f/xeejwkvk", {
-      method: "POST",
-      headers: { "Content-Type": "application/json" },
-      body: JSON.stringify(formData),
-    });
+    await emailjs.send(
+      'service_jtazplm',
+      'template_s9vdh59',
+      {
+        from_name: formData.name,
+        from_email: formData.email,
+        phone: formData.phone,
+        subject: formData.subject,
+        message: formData.message,
+      },
+      '4IPEtW6qlCBW7klXl'
+    );
     
     toast.success("Mesajınız göndərildi! Tezliklə sizinlə əlaqə saxlayacağıq.");
     setFormData({ name: "", email: "", phone: "", subject: "", message: "" });
