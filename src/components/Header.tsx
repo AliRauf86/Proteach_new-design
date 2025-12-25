@@ -203,7 +203,7 @@ const Header = () => {
                 <div className="pl-4 space-y-1 border-l-2 border-accent/30 ml-2">
                   <Link
                     to="/training"
-                    className="block text-sm text-muted-foreground hover:text-accent transition-colors py-2"
+                    className="block text-sm font-medium hover:text-accent transition-colors py-2"
                     onClick={() => setIsMobileMenuOpen(false)}
                   >
                     {t("Bütün Təlimlər", "All Training")}
@@ -212,7 +212,7 @@ const Header = () => {
                     <Link
                       key={item.href}
                       to={item.href}
-                      className="block text-sm text-muted-foreground hover:text-accent transition-colors py-2"
+                      className="block text-sm font-medium hover:text-accent transition-colors py-2"
                       onClick={() => setIsMobileMenuOpen(false)}
                     >
                       {t(item.labelAz, item.labelEn)}
@@ -238,7 +238,7 @@ const Header = () => {
                     <Link
                       key={item.href}
                       to={item.href}
-                      className="block text-sm text-muted-foreground hover:text-accent transition-colors py-2"
+                      className="block text-sm font-medium hover:text-accent transition-colors py-2"
                       onClick={() => setIsMobileMenuOpen(false)}
                     >
                       {t(item.labelAz, item.labelEn)}
@@ -252,7 +252,7 @@ const Header = () => {
               <Link
                 key={item.href}
                 to={item.href}
-                className="block text-sm font-medium text-white hover:text-accent transition-colors py-2"
+                className="block text-sm font-medium hover:text-accent transition-colors py-2"
                 onClick={() => setIsMobileMenuOpen(false)}
               >
                 {t(item.labelAz, item.labelEn)}
