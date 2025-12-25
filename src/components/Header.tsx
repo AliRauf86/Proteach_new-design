@@ -178,8 +178,8 @@ const Header = () => {
         {/* Mobile Menu */}
         {isMobileMenuOpen && (
           <nav className={`lg:hidden mt-4 pb-4 space-y-1 animate-fade-in ${
-    isScrolled ? "bg-white/95 backdrop-blur-md shadow-lg text-foreground"
-      : "bg-navy text-white"
+    isScrolled ? "bg-white/95 backdrop-blur-md shadow-lg"
+      : "bg-navy"
   }`}>
             <Link
               to="/"
@@ -193,7 +193,7 @@ const Header = () => {
             <div>
               <button
                 onClick={() => setIsMobileTrainingOpen(!isMobileTrainingOpen)}
-                className="flex items-center justify-between w-full text-sm font-medium text-white hover:text-accent transition-colors py-2"
+                className="flex items-center justify-between w-full text-sm font-medium hover:text-accent transition-colors py-2"
               >
                 {t("Təlimlər", "Training")}
                 <ChevronDown className={`w-4 h-4 transition-transform ${isMobileTrainingOpen ? "rotate-180" : ""}`} />
@@ -226,7 +226,7 @@ const Header = () => {
             <div>
               <button
                 onClick={() => setIsMobileAboutOpen(!isMobileAboutOpen)}
-                className="flex items-center justify-between w-full text-sm font-medium text-white hover:text-accent transition-colors py-2"
+                className="flex items-center justify-between w-full text-sm font-medium hover:text-accent transition-colors py-2"
               >
                 {t("Haqqımızda", "About")}
                 <ChevronDown className={`w-4 h-4 transition-transform ${isMobileAboutOpen ? "rotate-180" : ""}`} />
