@@ -178,11 +178,11 @@ const Header = () => {
         {/* Mobile Menu */}
         {isMobileMenuOpen && (
           <nav className={`lg:hidden mt-4 pb-4 space-y-1 animate-fade-in ${
-    isScrolled ? "bg-white/95 backdrop-blur-md shadow-lg" : "bg-navy"
+    isScrolled ? "bg-white/95 backdrop-blur-md shadow-lg text-foreground"
   }`}>
             <Link
               to="/"
-              className="block text-sm font-medium text-white hover:text-accent transition-colors py-2"
+              className="block text-sm font-medium hover:text-accent transition-colors py-2"
               onClick={() => setIsMobileMenuOpen(false)}
             >
               {t("Ana Səhifə", "Home")}
