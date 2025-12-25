@@ -177,7 +177,9 @@ const Header = () => {
 
         {/* Mobile Menu */}
         {isMobileMenuOpen && (
-          <nav className={`lg:hidden mt-4 pb-4 space-y-1 animate-fade-in ${isScrolled ? "bg-background" : "bg-navy"}`}>
+          <nav className={`lg:hidden mt-4 pb-4 space-y-1 animate-fade-in ${
+    isScrolled ? "bg-[hsl(var(--background))]" : "bg-[hsl(var(--navy))]"
+  }`}>
             <Link
               to="/"
               className="block text-sm font-medium text-white hover:text-accent transition-colors py-2"
