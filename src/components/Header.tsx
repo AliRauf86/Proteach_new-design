@@ -195,7 +195,9 @@ const Header = () => {
             <div>
               <button
                 onClick={() => setIsMobileTrainingOpen(!isMobileTrainingOpen)}
-                className="flex items-center justify-between w-full text-sm font-medium hover:text-accent transition-colors py-2"
+                className={`flex items-center justify-between w-full text-sm font-medium hover:text-accent transition-colors py-2 ${
+    isScrolled ? "text-navy" : "text-white"
+  }`}
               >
                 {t("Təlimlər", "Training")}
                 <ChevronDown className={`w-4 h-4 transition-transform ${isMobileTrainingOpen ? "rotate-180" : ""}`} />
@@ -205,7 +207,9 @@ const Header = () => {
                 <div className="pl-4 space-y-1 border-l-2 border-accent/30 ml-2">
                   <Link
                     to="/training"
-                    className="block text-sm font-medium hover:text-accent transition-colors py-2"
+                    className={`block text-sm font-medium hover:text-accent transition-colors py-2 ${
+    isScrolled ? "text-navy" : "text-white"
+  }`}
                     onClick={() => setIsMobileMenuOpen(false)}
                   >
                     {t("Bütün Təlimlər", "All Training")}
@@ -214,7 +218,9 @@ const Header = () => {
                     <Link
                       key={item.href}
                       to={item.href}
-                      className="block text-sm font-medium hover:text-accent transition-colors py-2"
+                      className={`block text-sm font-medium hover:text-accent transition-colors py-2 ${
+    isScrolled ? "text-navy" : "text-white"
+  }`}
                       onClick={() => setIsMobileMenuOpen(false)}
                     >
                       {t(item.labelAz, item.labelEn)}
@@ -228,7 +234,9 @@ const Header = () => {
             <div>
               <button
                 onClick={() => setIsMobileAboutOpen(!isMobileAboutOpen)}
-                className="flex items-center justify-between w-full text-sm font-medium hover:text-accent transition-colors py-2"
+                className={`block text-sm font-medium hover:text-accent transition-colors py-2 ${
+    isScrolled ? "text-navy" : "text-white"
+  }`}
               >
                 {t("Haqqımızda", "About")}
                 <ChevronDown className={`w-4 h-4 transition-transform ${isMobileAboutOpen ? "rotate-180" : ""}`} />
@@ -240,7 +248,9 @@ const Header = () => {
                     <Link
                       key={item.href}
                       to={item.href}
-                      className="block text-sm font-medium hover:text-accent transition-colors py-2"
+                      className={`flex items-center justify-between w-full text-sm font-medium hover:text-accent transition-colors py-2 ${
+    isScrolled ? "text-navy" : "text-white"
+  }`}
                       onClick={() => setIsMobileMenuOpen(false)}
                     >
                       {t(item.labelAz, item.labelEn)}
@@ -254,7 +264,9 @@ const Header = () => {
               <Link
                 key={item.href}
                 to={item.href}
-                className="block text-sm font-medium hover:text-accent transition-colors py-2"
+                className={`flex items-center gap-2 px-3 py-2 rounded-lg glass hover:bg-accent/10 transition-colors w-full ${
+    isScrolled ? "text-navy" : "text-white"
+  }`}
                 onClick={() => setIsMobileMenuOpen(false)}
               >
                 {t(item.labelAz, item.labelEn)}
