@@ -264,7 +264,7 @@ const Header = () => {
               <Link
                 key={item.href}
                 to={item.href}
-                className={`flex items-center gap-2 px-3 py-2 rounded-lg glass hover:bg-accent/10 transition-colors w-full ${
+                className={`block text-sm font-medium hover:text-accent transition-colors py-2 ${
     isScrolled ? "text-navy" : "text-white"
   }`}
                 onClick={() => setIsMobileMenuOpen(false)}
@@ -275,7 +275,9 @@ const Header = () => {
             
             <button
               onClick={() => setLanguage(language === "az" ? "en" : "az")}
-              className="flex items-center gap-2 px-3 py-2 rounded-lg glass hover:bg-accent/10 transition-colors w-full"
+              className="{`flex items-center gap-2 px-3 py-2 rounded-lg glass hover:bg-accent/10 transition-colors w-full ${
+    isScrolled ? "text-navy" : "text-white"
+  }`}
             >
               <Languages className="w-4 h-4" />
               <span className="text-sm font-medium">{language === "az" ? "EN" : "AZ"}</span>
