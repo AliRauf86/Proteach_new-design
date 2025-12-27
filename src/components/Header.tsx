@@ -275,7 +275,7 @@ const Header = () => {
             
             <button
               onClick={() => setLanguage(language === "az" ? "en" : "az")}
-              className="{`flex items-center gap-2 px-3 py-2 rounded-lg glass hover:bg-accent/10 transition-colors w-full ${
+              className={`flex items-center gap-2 px-3 py-2 rounded-lg glass hover:bg-accent/10 transition-colors w-full ${
     isScrolled ? "text-navy" : "text-white"
   }`}
             >
