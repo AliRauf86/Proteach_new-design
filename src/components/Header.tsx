@@ -158,11 +158,13 @@ const Header = () => {
               <Languages className="w-4 h-4" />
               <span className="text-sm font-medium">{language === "az" ? "EN" : "AZ"}</span>
             </button>
-            <Button variant="default" className="bg-accent hover:bg-accent/90"
-              onClick={() => {
-              window.location.href = "/contact"; 
-  }}>
+            <Button 
+              asChild
+              variant="default" className="bg-accent hover:bg-accent/90"
+              >
+              <Link to="/contact">
               {t("Qeydiyyat", "Register")}
+              </Link>
             </Button>
           </div>
 
@@ -282,12 +284,16 @@ const Header = () => {
               <Languages className="w-4 h-4" />
               <span className="text-sm font-medium">{language === "az" ? "EN" : "AZ"}</span>
             </button>
-            <Button variant="default" className="w-full bg-accent hover:bg-accent/90 mt-4"
-              onClick={() => {
-              window.location.href = "/contact"; 
-  }}
+            <Button 
+              asChild
+              variant="default" className="w-full bg-accent hover:bg-accent/90 mt-4"
               >
+              <Link
+    to="/contact"
+    onClick={() => setIsMobileMenuOpen(false)}
+  >
               {t("Qeydiyyat", "Register")}
+              </Link>
             </Button>
           </nav>
         )}
