@@ -234,7 +234,7 @@ const Header = () => {
             <div>
               <button
                 onClick={() => setIsMobileAboutOpen(!isMobileAboutOpen)}
-                className={`block text-sm font-medium hover:text-accent transition-colors py-2 ${
+                className={`flex items-center justify-between w-full text-sm font-medium hover:text-accent transition-colors py-2 ${
     isScrolled ? "text-navy" : "text-white"
   }`}
               >
