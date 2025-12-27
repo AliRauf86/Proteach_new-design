@@ -1,5 +1,6 @@
 import { Lightbulb, Target, Users, Zap } from "lucide-react";
 import { Button } from "./ui/button";
+import { Link } from "react-router-dom";
 
 const Consultation = () => {
   const services = [
@@ -97,7 +98,9 @@ const Consultation = () => {
               həll yolları əldə edin
             </p>
             <Button size="lg" className="bg-accent hover:bg-accent/90 text-white px-8">
-              Konsultasiya Sifarişi
+              <Link to="/consultation">
+                Konsultasiya AL
+              </Link>  
             </Button>
           </div>
         </div>
