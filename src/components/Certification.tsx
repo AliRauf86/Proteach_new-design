@@ -1,5 +1,6 @@
 import { Award, CheckCircle, GraduationCap, Globe } from "lucide-react";
 import { Button } from "./ui/button";
+import { Link } from "react-router-dom";
 
 const Certification = () => {
   const certificationTypes = [
