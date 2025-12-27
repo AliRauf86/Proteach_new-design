@@ -88,8 +88,12 @@ const Certification = () => {
               ))}
             </div>
             <div className="text-center">
-              <Button size="lg" className="bg-accent hover:bg-accent/90 text-white px-8">
-                Sertifikasiya Proqramları
+              <Button 
+                asChild
+                size="lg" className="bg-accent hover:bg-accent/90 text-white px-8">
+                <Link to="/certification-criteria">
+    Sertifikasiya Proqramları
+  </Link>
               </Button>
             </div>
           </div>
