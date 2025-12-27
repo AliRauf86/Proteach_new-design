@@ -183,7 +183,9 @@ const Header = () => {
   }`}>
             <Link
               to="/"
-              className="block text-sm font-medium hover:text-accent transition-colors py-2"
+              className={`block text-sm font-medium hover:text-accent transition-colors py-2 ${
+    isScrolled ? "text-navy" : "text-white"
+  }`}
               onClick={() => setIsMobileMenuOpen(false)}
             >
               {t("Ana Səhifə", "Home")}
