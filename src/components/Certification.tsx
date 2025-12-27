@@ -91,7 +91,7 @@ const Certification = () => {
               <Button 
                 asChild
                 size="lg" className="bg-accent hover:bg-accent/90 text-white px-8">
-                <Link to="/certification-criteria">
+                <Link to="/CertificationCriteriaPage">
     Sertifikasiya Proqramları
   </Link>
               </Button>
