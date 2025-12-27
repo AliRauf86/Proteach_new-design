@@ -98,7 +98,7 @@ const Consultation = () => {
               həll yolları əldə edin
             </p>
             <Button size="lg" className="bg-accent hover:bg-accent/90 text-white px-8">
-              <Link to="/consultation">
+              <Link to="/contact">
                 Konsultasiya AL
               </Link>  
             </Button>
