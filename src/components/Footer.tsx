@@ -81,7 +81,7 @@ const Footer = () => {
 </ul>
           </div>
 
-          {/* Training scope */}
+          {/* Training & Certification */}
           <div>
             <h3 className="text-lg font-bold mb-4 text-accent">Təlim Çərçivəsi</h3>
             <ul className="space-y-3">
