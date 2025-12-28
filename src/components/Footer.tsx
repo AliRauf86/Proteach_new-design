@@ -32,6 +32,9 @@ const Footer = () => {
               </a>
               <a
                 href="https://www.linkedin.com/company/proteach-az/"
+                target="_blank"
+    rel="noopener noreferrer"
+    aria-label="ProTeach LinkedIn"
                 className="w-10 h-10 rounded-full glass flex items-center justify-center hover:bg-accent/20 transition-colors"
               >
                 <Linkedin className="w-5 h-5" />
