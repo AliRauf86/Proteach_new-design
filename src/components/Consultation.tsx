@@ -16,8 +16,8 @@ const Consultation = () => {
     },
     {
       icon: Lightbulb,
-      title: "Standartların Tətbiqi",
-      description: "ISO standartlarının şirkətinizə uyğunlaşdırılması və tətbiqi",
+      title: "Standartlara Uyğunluq",
+      description: "ISO/IEC standartlarının təşkilati mühitə inteqrasiyası və davamlı uyğunluğun təmin edilməsi",
     },
     {
       icon: Users,
