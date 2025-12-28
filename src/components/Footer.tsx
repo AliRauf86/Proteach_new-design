@@ -19,7 +19,10 @@ const Footer = () => {
             </p>
             <div className="flex gap-4 pt-4">
               <a
-                href="#"
+                href="https://www.facebook.com/Proteach.az/"
+                target="_blank"
+    rel="noopener noreferrer"
+    aria-label="ProTeach Facebook"
                 className="w-10 h-10 rounded-full glass flex items-center justify-center hover:bg-accent/20 transition-colors"
               >
                 <Facebook className="w-5 h-5" />
