@@ -59,8 +59,8 @@ const Footer = () => {
     </Link>
   </li>
   <li>
-    <Link to="/training" className="text-gray-300 hover:text-accent transition-colors text-sm">
-      Təlimlər
+    <Link to="/solutions" className="text-gray-300 hover:text-accent transition-colors text-sm">
+      Həllər
     </Link>
   </li>
   <li>
