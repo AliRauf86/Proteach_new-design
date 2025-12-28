@@ -21,8 +21,8 @@ const Consultation = () => {
     },
     {
       icon: Users,
-      title: "Komanda Hazırlığı",
-      description: "Daxili komandanın hazırlanması və məsləhətləşmə",
+      title: "Dəyişikliklərin İdarəedilməsi",
+      description: "Komanda səriştələrinin inkişafı, rol bölgüsü və dəyişikliklərin effektiv idarə olunması",
     },
   ];
 
