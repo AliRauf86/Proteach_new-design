@@ -30,12 +30,12 @@ const FAQ = () => {
     {
       question: "Korporativ təlimlər təşkil edirsinizmi?",
       answer:
-        "Bəli, biz şirkətlər üçün xüsusi olaraq hazırlanmış korporativ təlim proqramları təqdim edirik. Təlimləri şirkətinizin ehtiyaclarına uyğunlaşdıraraq, ofisinizdə və ya onlayn formatda keçirə bilərik.",
+        "Bəli, biz şirkətlər üçün xüsusi olaraq hazırlanmış korporativ təlim proqramları təqdim edirik. Təlimləri şirkətinizin ehtiyaclarına uyğunlaşdıraraq, ofisinizdə və ya onlayn, eyni zamanda formatda keçirə bilərik.",
     },
     {
       question: "Konsultasiya xidmətləri hansı sahələri əhatə edir?",
       answer:
-        "Konsultasiya xidmətlərimiz informasiya təhlükəsizliyi, IT xidmət idarəetməsi, keyfiyyət idarəetməsi, kibertəhlükəsizlik, rəqəmsal transformasiya və digər ISO standartlarının tətbiqi sahələrini əhatə edir.",
+        "Konsultasiya xidmətlərimiz IT xidmət idarəetməsi, informasiya təhlükəsizliyi, keyfiyyət idarəetməsi, rəqəmsal transformasiya və bəzi ISO standartlarının tətbiqi sahələrini əhatə edir.",
     },
   ];
 
