@@ -81,24 +81,36 @@ const Footer = () => {
 </ul>
           </div>
 
-          {/* Services */}
+          {/* Training scope */}
           <div>
-            <h3 className="text-lg font-bold mb-4 text-accent">Xidmətlər</h3>
+            <h3 className="text-lg font-bold mb-4 text-accent">Təlim Çərçivəsi</h3>
             <ul className="space-y-3">
-              {[
-                "ISO/IEC 27001",
-                "ISO/IEC 20000",
-                "Kibertəhlükəsizlik",
-                "Konsultasiya",
-                "Rəqəmsal Transformasiya",
-              ].map((item) => (
-                <li key={item}>
-                  <a href="#" className="text-gray-300 hover:text-accent transition-colors text-sm">
-                    {item}
-                  </a>
-                </li>
-              ))}
-            </ul>
+  <li>
+    <Link to="/training/portfolio" className="text-gray-300 hover:text-accent text-sm">
+      Təlim Portfeli
+    </Link>
+  </li>
+  <li>
+    <Link to="/training/levels" className="text-gray-300 hover:text-accent text-sm">
+      Kurs Səviyyələri
+    </Link>
+  </li>
+  <li>
+    <Link to="/training/process" className="text-gray-300 hover:text-accent text-sm">
+      Sertifikatlaşdırma Prosesi
+    </Link>
+  </li>
+  <li>
+    <Link to="/training/criteria" className="text-gray-300 hover:text-accent text-sm">
+      Sertifikatlaşdırma Meyarları
+    </Link>
+  </li>
+  <li>
+    <Link to="/training/delivery" className="text-gray-300 hover:text-accent text-sm">
+      Çatdırılma Metodları
+    </Link>
+  </li>
+</ul>
           </div>
 
           {/* Contact Info */}
