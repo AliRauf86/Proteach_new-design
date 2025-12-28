@@ -22,7 +22,7 @@ const Consultation = () => {
     {
       icon: Users,
       title: "Dəyişikliklərin İdarəedilməsi",
-      description: "Komanda səriştələrinin inkişafı, rol bölgüsü və dəyişikliklərin effektiv idarə olunması",
+      description: "Komanda səriştələrinin inkişafı, rol bölgüsü və dəyişikliklərin effektiv şəkildə idarə olunması",
     },
   ];
 
