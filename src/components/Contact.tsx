@@ -56,7 +56,7 @@ const Contact = () => {
             Bizimlə <span className="gradient-text">Əlaqə</span>
           </h2>
           <p className="text-lg text-muted-foreground max-w-2xl mx-auto">
-            Suallarınız və ya təklifləriniz varsa, bizimlə əlaqə saxlayın
+            Təlimlərə qeydiyyat və ya suallarınız üçün bizə müraciət edin
           </p>
         </div>
 
