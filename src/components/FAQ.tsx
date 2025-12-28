@@ -10,12 +10,12 @@ const FAQ = () => {
     {
       question: "PROTEACH nə təklif edir?",
       answer:
-        "PROTEACH müxtəlif sahələr üzrə peşəkar təlimlər, ISO sertifikatlaşdırma və konsultasiya xidmətləri göstərir. Biz PECB ilə rəsmi tərəfdaşıq, ISO sertifikatları üzrə əyani, online və self-study tədris paketləri təqdim edirik.",
+        "PROTEACH müxtəlif sahələr üzrə peşəkar təlimlər, ISO sertifikatlaşdırma və konsultasiya xidmətləri göstərir. Biz PECB ilə rəsmi tərəfdaşıq, ISO sertifikatları 250+ üzrə əyani, online və self-study tədris paketləri təqdim edirik.",
     },
     {
       question: "Təlimlərin müddəti nə qədərdir?",
       answer:
-        "Təlimlərimizin müddəti kurs tipindən asılı olaraq 3-5 gün arasında dəyişir. Foundation səviyyəli kurslar adətən 2-3 gün, Professional və Lead Auditor kursları isə 5 gün davam edir.",
+        "Təlimlərimizin müddəti kurs tipindən asılı olaraq 2-5 gün arasında dəyişir. Foundation səviyyəli kurslar adətən 2-3 gün, Professional (Manager / Officer) 3 gün və Lead Implementer/Lead Auditor/Kibertəhlükəsizlik kursları isə 5 gün davam edir.",
     },
     {
       question: "Online təlim formatı mövcuddurmu?",
