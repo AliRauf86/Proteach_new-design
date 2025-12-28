@@ -12,7 +12,7 @@ const Consultation = () => {
     {
       icon: Zap,
       title: "Proses Optimallaşdırması",
-      description: "Mövcud proseslərin təhlili və təkmilləşdirilməsi üsulları",
+      description: "ITIL və ISO tələblərinə uyğun proseslərin təhlili, boşluqların müəyyən edilməsi və təkmilləşdirilməsi üsulları",
     },
     {
       icon: Lightbulb,
