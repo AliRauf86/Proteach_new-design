@@ -6,8 +6,8 @@ const Consultation = () => {
   const services = [
     {
       icon: Target,
-      title: "Strategiya Hazırlama",
-      description: "İT xidmət idarəetməsi və təhlükəsizlik strategiyalarının hazırlanması",
+      title: "Strateji Planlama",
+      description: "Müvafiq yanaşmalar əsasında idarəetmə modelinin və strateji yol xəritəsinin formalaşdırılması",
     },
     {
       icon: Zap,
