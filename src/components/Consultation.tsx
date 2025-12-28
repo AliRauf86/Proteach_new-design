@@ -91,7 +91,7 @@ const Consultation = () => {
         <div className="mt-16 text-center">
           <div className="glass-dark rounded-2xl p-12 max-w-4xl mx-auto">
             <h3 className="text-3xl font-bold mb-4 text-navy">
-              Biznesinizi Növbəti Səviyyəyə Daşıyın
+              Davamlı və Ölçüləbilən İnkişaf Üçün Konsultasiya
             </h3>
             <p className="text-lg text-muted-foreground mb-8 max-w-2xl mx-auto">
               Peşəkar konsultantlarımızla görüşərək şirkətinizin ehtiyaclarını müzakirə edin və fərdi
