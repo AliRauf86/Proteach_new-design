@@ -53,14 +53,32 @@ const Footer = () => {
           <div>
             <h3 className="text-lg font-bold mb-4 text-accent">Sürətli Keçidlər</h3>
             <ul className="space-y-3">
-              {["Ana Səhifə", "Təlimlər", "Haqqımızda", "Sertifikasiya", "Əlaqə"].map((item) => (
-                <li key={item}>
-                  <a href="#" className="text-gray-300 hover:text-accent transition-colors text-sm">
-                    {item}
-                  </a>
-                </li>
-              ))}
-            </ul>
+  <li>
+    <Link to="/" className="text-gray-300 hover:text-accent transition-colors text-sm">
+      Ana Səhifə
+    </Link>
+  </li>
+  <li>
+    <Link to="/trainings" className="text-gray-300 hover:text-accent transition-colors text-sm">
+      Təlimlər
+    </Link>
+  </li>
+  <li>
+    <Link to="/certification" className="text-gray-300 hover:text-accent transition-colors text-sm">
+      Sertifikasiya
+    </Link>
+  </li>
+  <li>
+    <Link to="/about" className="text-gray-300 hover:text-accent transition-colors text-sm">
+      Haqqımızda
+    </Link>
+  </li>
+  <li>
+    <Link to="/contact" className="text-gray-300 hover:text-accent transition-colors text-sm">
+      Əlaqə
+    </Link>
+  </li>
+</ul>
           </div>
 
           {/* Services */}
