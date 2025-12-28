@@ -28,9 +28,9 @@ const Consultation = () => {
 
   const process = [
     { step: "01", title: "Analiz", desc: "Cari vəziyyətin qiymətləndirilməsi" },
-    { step: "02", title: "Planlaşdırma", desc: "Strateji yol xəritəsinin hazırlanması" },
-    { step: "03", title: "Həyata keçirmə", desc: "Planın addım-addım tətbiqi" },
-    { step: "04", title: "Nəzarət", desc: "Nəticələrin monitorinqi və optimallaşdırma" },
+    { step: "02", title: "Prioritetləşdirmə", desc: "Tələblərin müəyyən edilməsi" },
+    { step: "03", title: "Həllərin Tətbiqi", desc: "Tövsiyələrin dizaynı və həyata keçirilməsi" },
+    { step: "04", title: "Monitorinq", desc: "Performans göstəricilərinin izlənməsi və optimallaşdırma" },
   ];
 
   return (
