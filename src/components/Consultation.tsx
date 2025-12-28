@@ -45,7 +45,7 @@ const Consultation = () => {
             Konsultasiya <span className="gradient-text">Xidmətləri</span>
           </h2>
           <p className="text-lg text-muted-foreground max-w-2xl mx-auto">
-            Peşəkar məsləhətlərlə biznesinizi yeni zirvələrə qaldırın
+            Ən yaxşı təcrübəyə və standartlara əsaslanan konsaltinq yanaşması ilə davamlı inkişafı təmin edin
           </p>
         </div>
 
