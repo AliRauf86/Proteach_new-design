@@ -5,10 +5,22 @@ import { useLanguage } from "@/contexts/LanguageContext";
 const About = () => {
   const { t } = useLanguage();
   const values = [
-    "Peşəkarlıq və etibarlılıq",
-    "Davamlı inkişaf və innovasiya",
-    "Müştəri məmnuniyyəti",
-    "Şəffaflıq və məsuliyyət",
+    {
+    az: "Peşəkarlıq və etibarlılıq",
+    en: "Professionalism and reliability",
+  },
+  {
+    az: "Davamlı inkişaf və innovasiya",
+    en: "Continuous improvement and innovation",
+  },
+  {
+    az: "Müştəri məmnuniyyəti",
+    en: "Customer satisfaction",
+  },
+  {
+    az: "Şəffaflıq və məsuliyyət",
+    en: "Transparency and responsibility",
+  },
   ];
 
   return (
