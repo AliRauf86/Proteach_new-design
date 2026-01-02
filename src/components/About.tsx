@@ -1,7 +1,9 @@
 import { Target, Eye, CheckCircle } from "lucide-react";
 import consultant from "@/assets/consultant.jpg";
+import { useLanguage } from "@/contexts/LanguageContext";
 
 const About = () => {
+  const { t } = useLanguage();
   const values = [
     "Peşəkarlıq və etibarlılıq",
     "Davamlı inkişaf və innovasiya",
