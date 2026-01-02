@@ -101,7 +101,7 @@ const About = () => {
                 {values.map((value, index) => (
                   <div key={index} className="flex items-center gap-3">
                     <CheckCircle className="w-5 h-5 text-accent flex-shrink-0" />
-                    <span className="text-gray-300">{value}</span>
+                    <span className="text-gray-300">{t(value.az, value.en)}</span>
                   </div>
                 ))}
               </div>
