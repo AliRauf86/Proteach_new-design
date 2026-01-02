@@ -10,9 +10,9 @@ const AboutPage = () => {
   return (
     <>
       <Helmet>
-        <title>{t("Haqqımızda - PROTEACH", "About Us - PROTEACH")}</title>
-        <meta name="description" content={t("PROTEACH - Azərbaycanda ISO sertifikasiyası və peşəkar təlim sahəsində aparıcı mərkəz. Beynəlxalq standartlar və keyfiyyətli xidmətlər.", "PROTEACH - Leading center for ISO certification and professional training in Azerbaijan. International standards and quality services.")} />
-        <meta name="keywords" content={t("PROTEACH haqqında, təlim mərkəzi, sertifikasiya mərkəzi, peşəkar təlim Azərbaycan", "About PROTEACH, training center, certification center, professional training Azerbaijan")} />
+        <title>{t("Haqqımızda - ProTeach", "About Us - ProTeach")}</title>
+        <meta name="description" content={t("ProTeach - Sertifikasiya və peşəkar təlim sahəsində aparıcı mərkəz. Beynəlxalq standartlar və keyfiyyətli xidmətlər.", "ProTeach - Leading center for certification and professional training. International standards and quality services.")} />
+        <meta name="keywords" content={t("PROTEACH haqqında, təlim mərkəzi, sertifikasiya mərkəzi, peşəkar təlim Azərbaycan", "About ProTeach, training center, certification center, professional training Azerbaijan")} />
       </Helmet>
       <div className="min-h-screen bg-navy">
         <Header />
