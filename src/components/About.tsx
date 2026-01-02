@@ -30,7 +30,7 @@ const About = () => {
             {/* Floating badge */}
             <div className="absolute -bottom-6 -right-6 glass p-6 rounded-2xl animate-float">
               <p className="text-4xl font-bold text-accent">15+</p>
-              <p className="text-white text-sm">İllik Təcrübə</p>
+              <p className="text-white text-sm">{t("İllik Təcrübə", "Years Experience")}</p>
             </div>
           </div>
 
@@ -38,7 +38,7 @@ const About = () => {
           <div className="space-y-8 text-white animate-fade-in-up">
             <div>
               <h2 className="text-4xl lg:text-5xl font-bold mb-4">
-                Haqqımızda <span className="gradient-text"> </span>
+                {t("Haqqımızda", "About")} <span className="gradient-text"> </span>
               </h2>
               <p className="text-lg text-gray-300 leading-relaxed">
                 ProTeach beynəlxalq səviyyədə tanınmış idarəetmə sistemləri, 
