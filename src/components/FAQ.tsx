@@ -11,35 +11,53 @@ const FAQ = () => {
   
   const faqs = [
     {
-      question: "PROTEACH nə təklif edir?",
-      answer:
-        "PROTEACH müxtəlif sahələr üzrə peşəkar təlimlər, ISO sertifikatlaşdırma və konsultasiya xidmətləri göstərir. Biz PECB ilə rəsmi tərəfdaşıq və ISO sertifikatları üzrə 250-dən çox kurs üçün əyani, onlayn və self-study tədris paketləri təqdim edirik.",
-    },
-    {
-      question: "Təlimlərin müddəti nə qədərdir?",
-      answer:
-        "Təlimlərimizin müddəti kurs tipindən asılı olaraq 2-5 gün arasında dəyişir. Foundation səviyyəli kurslar adətən 2-3 gün, Professional (Manager / Officer) 3 gün və Lead Implementer/Lead Auditor/Kibertəhlükəsizlik kursları isə 5 gün davam edir.",
-    },
-    {
-      question: "Online təlim formatı mövcuddurmu?",
-      answer:
-        "Bəli, biz həm əyani, həm də online təlim formatları təqdim edirik. Online təlimlər canlı virtual sinif formatında keçirilir və interaktiv məşğələlər, praktik tapşırıqlar və sertifikat imtahanlarını əhatə edir.",
-    },
-    {
-      question: "Sertifikatlar beynəlxalq səviyyədə tanınırmı?",
-      answer:
-        "Bəli, PECB tərəfindən verilən sertifikatlar beynəlxalq səviyyədə tanınır və qəbul edilir. Bu sertifikatlar ISO/IEC standartlarına uyğun olaraq hazırlanır və dünya üzrə etibar olunur.",
-    },
-    {
-      question: "Korporativ təlimlər təşkil edirsinizmi?",
-      answer:
-        "Bəli, biz şirkətlər üçün xüsusi olaraq hazırlanmış korporativ təlim proqramları təqdim edirik. Təlimləri şirkətinizin ehtiyaclarına uyğunlaşdıraraq, ofisinizdə və ya onlayn, eyni zamanda formatda keçirə bilərik.",
-    },
-    {
-      question: "Konsultasiya xidmətləri hansı sahələri əhatə edir?",
-      answer:
-        "Konsultasiya xidmətlərimiz IT xidmət idarəetməsi, informasiya təhlükəsizliyi, keyfiyyət idarəetməsi, rəqəmsal transformasiya və bəzi ISO standartlarının tətbiqi sahələrini əhatə edir.",
-    },
+    questionAz: "PROTEACH nə təklif edir?",
+    questionEn: "What does PROTEACH offer?",
+    answerAz:
+      "PROTEACH müxtəlif sahələr üzrə peşəkar təlimlər, ISO sertifikatlaşdırma və konsultasiya xidmətləri göstərir. Biz PECB ilə rəsmi tərəfdaşıq və ISO sertifikatları üzrə 250-dən çox kurs üçün əyani, onlayn və self-study tədris paketləri təqdim edirik.",
+    answerEn:
+      "PROTEACH provides professional training, ISO certification, and consulting services across various domains. We are an official PECB partner and offer in-person, online, and self-study training packages for more than 250 ISO-related courses.",
+  },
+  {
+    questionAz: "Təlimlərin müddəti nə qədərdir?",
+    questionEn: "How long do the trainings last?",
+    answerAz:
+      "Təlimlərimizin müddəti kurs tipindən asılı olaraq 2–5 gün arasında dəyişir. Foundation səviyyəli kurslar adətən 2–3 gün, Professional (Manager / Officer) kurslar 3 gün, Lead Implementer, Lead Auditor və Kibertəhlükəsizlik kursları isə 5 gün davam edir.",
+    answerEn:
+      "The duration of our trainings varies between 2 and 5 days depending on the course type. Foundation-level courses usually last 2–3 days, Professional (Manager / Officer) courses last 3 days, while Lead Implementer, Lead Auditor, and Cybersecurity courses last 5 days.",
+  },
+  {
+    questionAz: "Online təlim formatı mövcuddurmu?",
+    questionEn: "Is an online training format available?",
+    answerAz:
+      "Bəli, biz həm əyani, həm də onlayn təlim formatları təqdim edirik. Onlayn təlimlər canlı virtual sinif formatında keçirilir və interaktiv müzakirələr, praktik tapşırıqlar və sertifikasiya imtahanlarını əhatə edir.",
+    answerEn:
+      "Yes, we offer both in-person and online training formats. Online trainings are conducted in a live virtual classroom format and include interactive discussions, practical exercises, and certification exams.",
+  },
+  {
+    questionAz: "Sertifikatlar beynəlxalq səviyyədə tanınırmı?",
+    questionEn: "Are the certificates internationally recognized?",
+    answerAz:
+      "Bəli, PECB tərəfindən təqdim edilən sertifikatlar beynəlxalq səviyyədə tanınır və qəbul olunur. Bu sertifikatlar ISO/IEC standartlarına uyğun hazırlanır və dünya üzrə geniş etibara malikdir.",
+    answerEn:
+      "Yes, certificates issued by PECB are internationally recognized and widely accepted. They are developed in accordance with ISO/IEC standards and are trusted worldwide.",
+  },
+  {
+    questionAz: "Korporativ təlimlər təşkil edirsinizmi?",
+    questionEn: "Do you provide corporate trainings?",
+    answerAz:
+      "Bəli, biz təşkilatlar üçün xüsusi hazırlanmış korporativ təlim proqramları təqdim edirik. Təlimlər şirkətinizin ehtiyaclarına uyğunlaşdırılaraq ofisinizdə, onlayn və ya hibrid formatda keçirilə bilər.",
+    answerEn:
+      "Yes, we provide customized corporate training programs tailored to organizational needs. Trainings can be delivered at your office, online, or in a hybrid format.",
+  },
+  {
+    questionAz: "Konsultasiya xidmətləri hansı sahələri əhatə edir?",
+    questionEn: "Which areas do your consulting services cover?",
+    answerAz:
+      "Konsultasiya xidmətlərimiz IT xidmət idarəetməsi (ITSM), informasiya təhlükəsizliyi, keyfiyyət idarəetməsi, rəqəmsal transformasiya və müxtəlif ISO standartlarının tətbiqi sahələrini əhatə edir.",
+    answerEn:
+      "Our consulting services cover IT Service Management (ITSM), information security, quality management, digital transformation, and the implementation of various ISO standards.",
+  },
   ];
 
   return (
