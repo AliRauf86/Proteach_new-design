@@ -9,12 +9,9 @@ import { useLanguage } from "@/contexts/LanguageContext";
 const FAQ = () => {
   const faqs = [
     {
-      question: {t("PROTEACH nə təklif edir?",
-      "What does PROTEACH offer?",
+      question: "PROTEACH nə təklif edir?",
       answer:
         "PROTEACH müxtəlif sahələr üzrə peşəkar təlimlər, ISO sertifikatlaşdırma və konsultasiya xidmətləri göstərir. Biz PECB ilə rəsmi tərəfdaşıq və ISO sertifikatları üzrə 250-dən çox kurs üçün əyani, onlayn və self-study tədris paketləri təqdim edirik.",
-        "PROTEACH provides professional training, ISO certification, and consulting services across various fields. We are an official PECB partner and offer in-person, online, and self-study training packages for over 250 ISO certification courses."
-    )},
     },
     {
       question: "Təlimlərin müddəti nə qədərdir?",
