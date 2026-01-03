@@ -52,7 +52,7 @@ const About = () => {
           <div className="space-y-8 text-white animate-fade-in-up">
             <div>
               <h2 className="text-4xl lg:text-5xl font-bold mb-4">
-                {t("Haqqımızda", "About")} <span className="gradient-text"> </span>
+                {t("Haqqımızda", "About Us")} <span className="gradient-text"> </span>
               </h2>
               <p className="text-lg text-gray-300 leading-relaxed">
                 {t("ProTeach beynəlxalq səviyyədə tanınmış idarəetmə sistemləri, ITSM təcrübələri və təşkilati inkişaf həlləri üzrə ixtisaslaşmış peşəkar təlim və konsultasiya mərkəzidir.",
