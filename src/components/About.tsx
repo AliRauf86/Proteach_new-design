@@ -68,7 +68,7 @@ const About = () => {
                     <Target className="w-6 h-6 text-accent" />
                   </div>
                   <div>
-                    <h3 className="text-xl font-bold mb-2">Missiyamız</h3>
+                    <h3 className="text-xl font-bold mb-2">{t("Missiyamız", "Our Mission")}</h3>
                     <p className="text-gray-300">
                       Keyfiyyət, innovasiya və davamlı təkmilləşdirmə öhdəliyi ilə ProTeach müxtəlif sənaye sahələrində 
                       fərdlərin və təşkilatların peşəkar bacarıqlarını gücləndirməyi hədəfləyir.
@@ -84,7 +84,7 @@ const About = () => {
                     <Eye className="w-6 h-6 text-magenta" />
                   </div>
                   <div>
-                    <h3 className="text-xl font-bold mb-2">Vizyonumuz</h3>
+                    <h3 className="text-xl font-bold mb-2">{t("Vizyonumuz", "Our Vision")}</h3>
                     <p className="text-gray-300">
                       Təlim, sertifikatlaşdırma və konsultasiya xidmətləri ilə təşkilatları 
                       qlobal standartlara və əməliyyat mükəmməlliyinə aparmaqdır.
@@ -96,7 +96,7 @@ const About = () => {
 
             {/* Values */}
             <div>
-              <h3 className="text-2xl font-bold mb-4">Dəyərlərimiz</h3>
+              <h3 className="text-2xl font-bold mb-4">{t("Dəyərlərimiz", "Our Values")}</h3>
               <div className="grid grid-cols-1 gap-3">
                 {values.map((value, index) => (
                   <div key={index} className="flex items-center gap-3">
