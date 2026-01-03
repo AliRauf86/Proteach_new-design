@@ -47,10 +47,13 @@ const FAQ = () => {
       <div className="container mx-auto px-4">
         <div className="text-center mb-16 animate-fade-in">
           <h2 className="text-4xl lg:text-5xl font-bold mb-4">
-            Tez-tez Verilən <span className="gradient-text">Suallar</span>
+            {t("Tez-tez Verilən", "Frequently Asked")} <span className="gradient-text">{t("Suallar", "Questions")}</span>
           </h2>
           <p className="text-lg text-muted-foreground max-w-2xl mx-auto">
-            Ən çox soruşulan suallara cavablar
+            {t(
+              "Ən çox soruşulan suallara cavablar",
+              "Answers to the most frequently asked questions"
+            )}
           </p>
         </div>
 
