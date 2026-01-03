@@ -62,10 +62,10 @@ const FAQ = () => {
                 style={{ animationDelay: `${index * 100}ms` }}
               >
                 <AccordionTrigger className="text-left text-lg font-semibold text-navy hover:text-accent hover:no-underline py-6">
-                  {faq.question}
+                  {t(faq.questionAz, faq.questionEn)}
                 </AccordionTrigger>
                 <AccordionContent className="text-muted-foreground pb-6 leading-relaxed">
-                  {faq.answer}
+                  {t(faq.answerAz, faq.answerEn)}
                 </AccordionContent>
               </AccordionItem>
             ))}
