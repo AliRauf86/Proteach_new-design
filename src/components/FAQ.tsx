@@ -6,21 +6,13 @@ import {
 } from "@/components/ui/accordion";
 import { useLanguage } from "@/contexts/LanguageContext";
 
-interface FAQItem {
-  questionAz: string;
-  questionEn: string;
-  answerAz: string;
-  answerEn: string;
-}
-
 const FAQ = () => {
   const faqs = [
     {
-      questionAz: "PROTEACH nə təklif edir?",
-      questionEn: "What does PROTEACH offer?",
-      answerAz:
+      question: "PROTEACH nə təklif edir?",
+      "What does PROTEACH offer?",
+      answer:
         "PROTEACH müxtəlif sahələr üzrə peşəkar təlimlər, ISO sertifikatlaşdırma və konsultasiya xidmətləri göstərir. Biz PECB ilə rəsmi tərəfdaşıq və ISO sertifikatları üzrə 250-dən çox kurs üçün əyani, onlayn və self-study tədris paketləri təqdim edirik.",
-      answerEn:
         "PROTEACH provides professional training, ISO certification, and consulting services across various fields. We are an official PECB partner and offer in-person, online, and self-study training packages for over 250 ISO certification courses.",
     },
     {
