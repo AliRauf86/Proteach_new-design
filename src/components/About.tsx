@@ -55,10 +55,8 @@ const About = () => {
                 {t("Haqqımızda", "About")} <span className="gradient-text"> </span>
               </h2>
               <p className="text-lg text-gray-300 leading-relaxed">
-                {t("ProTeach beynəlxalq səviyyədə tanınmış idarəetmə sistemləri, 
-                ITSM təcrübələri və təşkilati inkişaf həlləri üzrə ixtisaslaşmış peşəkar təlim və konsultasiya mərkəzidir.",
-                "ProTeach is a professional training and consulting center specializing in internationally recognized management systems, 
-                ITSM practices, and organizational development solutions.")}
+                {t("ProTeach beynəlxalq səviyyədə tanınmış idarəetmə sistemləri, ITSM təcrübələri və təşkilati inkişaf həlləri üzrə ixtisaslaşmış peşəkar təlim və konsultasiya mərkəzidir.",
+                "ProTeach is a professional training and consulting center specializing in internationally recognized management systems, ITSM practices, and organizational development solutions.")}
               </p>
             </div>
 
@@ -72,10 +70,8 @@ const About = () => {
                   <div>
                     <h3 className="text-xl font-bold mb-2">{t("Missiyamız", "Our Mission")}</h3>
                     <p className="text-gray-300">
-                      {t("Keyfiyyət, innovasiya və davamlı təkmilləşdirmə öhdəliyi ilə ProTeach müxtəlif sənaye sahələrində 
-                      fərdlərin və təşkilatların peşəkar bacarıqlarını gücləndirməyi hədəfləyir.",
-                      With a commitment to quality, innovation, and continuous improvement, ProTeach aims to strengthen the 
-                      professional capabilities of individuals and organizations across various industries.")}
+                      {t("Keyfiyyət, innovasiya və davamlı təkmilləşdirmə öhdəliyi ilə ProTeach müxtəlif sənaye sahələrində fərdlərin və təşkilatların peşəkar bacarıqlarını gücləndirməyi hədəfləyir.",
+                      "With a commitment to quality, innovation, and continuous improvement, ProTeach aims to strengthen the professional capabilities of individuals and organizations across various industries.")}
                     </p>
                   </div>
                 </div>
