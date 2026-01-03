@@ -56,31 +56,31 @@ const Footer = () => {
 
           {/* Quick Links */}
           <div>
-            <h3 className="text-lg font-bold mb-4 text-accent">Sürətli Keçidlər</h3>
+            <h3 className="text-lg font-bold mb-4 text-accent">{t("Sürətli Keçidlər", "Quick Links")}</h3>
             <ul className="space-y-3">
   <li>
     <Link to="/" className="text-gray-300 hover:text-accent transition-colors text-sm">
-      Ana Səhifə
+      {t("Ana Səhifə", "Home")}
     </Link>
   </li>
   <li>
     <Link to="/solutions" className="text-gray-300 hover:text-accent transition-colors text-sm">
-      Həllər
+      {t("Həllər", "Solutions")}
     </Link>
   </li>
   <li>
     <Link to="/certification" className="text-gray-300 hover:text-accent transition-colors text-sm">
-      Sertifikasiya
+      {t("Sertifikasiya", "Certification")}
     </Link>
   </li>
   <li>
     <Link to="/about" className="text-gray-300 hover:text-accent transition-colors text-sm">
-      Haqqımızda
+      {t("Haqqımızda", "About Us")}
     </Link>
   </li>
   <li>
     <Link to="/contact" className="text-gray-300 hover:text-accent transition-colors text-sm">
-      Əlaqə
+      {t("Əlaqə", "Contact")}
     </Link>
   </li>
 </ul>
@@ -88,31 +88,31 @@ const Footer = () => {
 
           {/* Training & Certification */}
           <div>
-            <h3 className="text-lg font-bold mb-4 text-accent">Təlim Çərçivəsi</h3>
+            <h3 className="text-lg font-bold mb-4 text-accent">{t("Təlim Çərçivəsi", "Training Framework")}</h3>
             <ul className="space-y-3">
   <li>
     <Link to="/training/portfolio" className="text-gray-300 hover:text-accent text-sm">
-      Təlim Portfeli
+      {t("Təlim Portfeli", "Training Portfolio")}
     </Link>
   </li>
   <li>
     <Link to="/training/levels" className="text-gray-300 hover:text-accent text-sm">
-      Kurs Səviyyələri
+      {t("Kurs Səviyyələri", "Course Levels")}
     </Link>
   </li>
   <li>
     <Link to="/training/process" className="text-gray-300 hover:text-accent text-sm">
-      Sertifikatlaşdırma Prosesi
+      {t("Sertifikatlaşdırma Prosesi", "Certification Process")}
     </Link>
   </li>
   <li>
     <Link to="/training/criteria" className="text-gray-300 hover:text-accent text-sm">
-      Sertifikatlaşdırma Meyarları
+      {t("Sertifikatlaşdırma Meyarları", "Certification Criteria")}
     </Link>
   </li>
   <li>
     <Link to="/training/delivery" className="text-gray-300 hover:text-accent text-sm">
-      Çatdırılma Metodları
+      {t("Çatdırılma Metodları", "Delivery Methods")}
     </Link>
   </li>
 </ul>
@@ -120,12 +120,12 @@ const Footer = () => {
 
           {/* Contact Info */}
           <div>
-            <h3 className="text-lg font-bold mb-4 text-accent">Əlaqə</h3>
+            <h3 className="text-lg font-bold mb-4 text-accent">{t("Əlaqə", "Contact")}</h3>
             <ul className="space-y-4">
               <li className="flex items-start gap-3">
                 <Phone className="w-5 h-5 text-accent flex-shrink-0 mt-0.5" />
                 <div>
-                  <p className="text-sm text-gray-400 mb-1">Telefon</p>
+                  <p className="text-sm text-gray-400 mb-1">{t("Telefon", "Phone")}</p>
                   <a href="tel:+994552877884" className="text-sm text-gray-300 hover:text-accent">
                     +994 55 287 78 84
                   </a>
@@ -134,7 +134,7 @@ const Footer = () => {
               <li className="flex items-start gap-3">
                 <Mail className="w-5 h-5 text-accent flex-shrink-0 mt-0.5" />
                 <div>
-                  <p className="text-sm text-gray-400 mb-1">Email</p>
+                  <p className="text-sm text-gray-400 mb-1">{t("Email", "Email")}</p>
                   <a
                     href="mailto:info@proteach.az"
                     className="text-sm text-gray-300 hover:text-accent"
@@ -151,14 +151,14 @@ const Footer = () => {
         <div className="border-t border-white/10 pt-8">
           <div className="flex flex-col md:flex-row justify-between items-center gap-4">
             <p className="text-sm text-gray-400">
-              © {currentYear} PROTEACH. Bütün hüquqlar qorunur.
+              © {currentYear} PROTEACH. {t("Bütün hüquqlar qorunur.", "All rights reserved.")}
             </p>
             <div className="flex gap-6">
               <a href="#" className="text-sm text-gray-400 hover:text-accent transition-colors">
-                Məxfilik Siyasəti
+                {t("Məxfilik Siyasəti", "Privacy Policy")}
               </a>
               <a href="#" className="text-sm text-gray-400 hover:text-accent transition-colors">
-                İstifadə Şərtləri
+                {t("İstifadə Şərtləri", "Terms of Use")}
               </a>
             </div>
           </div>
