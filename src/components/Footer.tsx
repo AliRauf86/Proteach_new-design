@@ -1,10 +1,12 @@
 import { Facebook, Instagram, Linkedin, Mail, Phone } from "lucide-react";
 import logo from "@/assets/logo.png";
 import { Link } from "react-router-dom";
+import { useLanguage } from "@/contexts/LanguageContext";
 
 const Footer = () => {
   const currentYear = new Date().getFullYear();
-
+  const { t } = useLanguage();
+  
   return (
     <footer className="bg-navy text-white relative overflow-hidden">
       {/* Decorative top border */}
@@ -16,7 +18,10 @@ const Footer = () => {
           <div className="space-y-4">
             <img src={logo} alt="PROTEACH" className="h-12 mb-4" />
             <p className="text-gray-300 text-sm leading-relaxed">
-              Müasir texnologiyalar və ən yaxşı təcrübələrlə təchiz olunmuş mütəxəssislər yetişdiririk.
+              {t(
+                "Müasir texnologiyalar və ən yaxşı təcrübələrlə təchiz olunmuş mütəxəssislər yetişdiririk.",
+                "We train professionals equipped with modern technologies and best practices."
+              )}
             </p>
             <div className="flex gap-4 pt-4">
               <a
