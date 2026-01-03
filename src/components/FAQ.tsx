@@ -7,6 +7,8 @@ import {
 import { useLanguage } from "@/contexts/LanguageContext";
 
 const FAQ = () => {
+  const { t } = useLanguage();
+  
   const faqs = [
     {
       question: "PROTEACH nə təklif edir?",
