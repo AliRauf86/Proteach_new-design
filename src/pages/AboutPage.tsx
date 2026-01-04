@@ -48,7 +48,7 @@ const AboutPage = () => {
     "ProTeach - Sertifikasiya və peşəkar təlim sahəsində aparıcı mərkəz. Beynəlxalq standartlar və keyfiyyətli xidmətlər.",
     "ProTeach - Leading center for certification and professional training. International standards and quality services."
   )} />
-  <meta name="twitter:image" content="https://proteach.az/opengraph-image.png" />
+  <meta name="twitter:image" content="https://proteach.az/logo.png" />
 
   {/* Breadcrumb structured data */}
   <script type="application/ld+json">
