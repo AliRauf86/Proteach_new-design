@@ -1,8 +1,8 @@
-import { Helmet } from "react-helmet-async";
 import Header from "@/components/Header";
 import Footer from "@/components/Footer";
 import TrainingPortfolio from "@/components/TrainingPortfolio";
 import { useLanguage } from "@/contexts/LanguageContext";
+import SEO from "@/components/SEO";
 
 const TrainingPortfolioPage = () => {
   const { t } = useLanguage();
