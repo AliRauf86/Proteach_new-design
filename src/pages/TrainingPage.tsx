@@ -1,4 +1,3 @@
-import { Helmet } from "react-helmet-async";
 import { useLanguage } from "@/contexts/LanguageContext";
 import Header from "@/components/Header";
 import Training from "@/components/Training";
@@ -7,6 +6,7 @@ import CourseLevels from "@/components/CourseLevels";
 import CertificationProcess from "@/components/CertificationProcess";
 import DeliveryMethods from "@/components/DeliveryMethods";
 import Footer from "@/components/Footer";
+import SEO from "@/components/SEO";
 
 const TrainingPage = () => {
   const { t } = useLanguage();
