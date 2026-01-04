@@ -1,10 +1,10 @@
-import { Helmet } from "react-helmet-async";
 import { useLanguage } from "@/contexts/LanguageContext";
 import Header from "@/components/Header";
 import Certification from "@/components/Certification";
 import CertificationProcess from "@/components/CertificationProcess";
 import CertificationCriteria from "@/components/CertificationCriteria";
 import Footer from "@/components/Footer";
+import SEO from "@/components/SEO";
 
 const CertificationPage = () => {
   const { t } = useLanguage();
