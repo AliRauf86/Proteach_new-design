@@ -25,8 +25,16 @@ const TrainingPage = () => {
         )}
         url="https://proteach.az/training"
         breadcrumb={[
-          { name: "Ana Səhifə", item: "https://proteach.az" },
-          { name: "Təlimlər", item: "https://proteach.az/training" }
+    { 
+      position: 1, 
+      name: t("Ana Səhifə", "Home"), 
+      item: "https://proteach.az" 
+    },
+    { 
+      position: 2, 
+      name: t("Təlimlər", "Training"), 
+      item: "https://proteach.az/training" 
+    }
         ]}
       />
       
