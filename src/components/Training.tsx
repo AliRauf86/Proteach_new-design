@@ -12,62 +12,104 @@ const Training = () => {
     {
       icon: Shield,
       title: "ISO/IEC 27001",
-      subtitle: "Information Security Management System",
-      description: "Məlumat təhlükəsizliyi idarəetmə sistemlərinin tətbiqi və idarə edilməsi",
+      subtitle: t("Məlumat Təhlükəsizliyi İdarəetmə Sistemi", "Information Security Management System"),
+      description: t(
+      "Məlumat təhlükəsizliyi idarəetmə sistemlərinin tətbiqi və idarə edilməsi",
+      "Implementation and management of information security management systems"
+    ),
       details:
-        "ISO/IEC 27001 beynəlxalq standartı təşkilatların informasiya təhlükəsizliyi idarəetmə sistemlərini (ISMS) qurmaq, həyata keçirmək, saxlamaq və davamlı olaraq təkmilləşdirmək üçün tələbləri müəyyən edir. Bu təlim proqramı sizə risk qiymətləndirməsi, nəzarət tədbirləri və audit bacarıqlarını öyrədəcək.",
-      duration: "2 / 5 gün (Transition – 2 gün)",
-      level: "Fundamental / Lead Implementer / Lead Auditor",
+        t(
+      "ISO/IEC 27001 beynəlxalq standartı təşkilatların informasiya təhlükəsizliyi idarəetmə sistemlərini (ISMS) qurmaq, həyata keçirmək, saxlamaq və davamlı olaraq təkmilləşdirmək üçün tələbləri müəyyən edir. Bu təlim proqramı sizə risk qiymətləndirməsi, nəzarət tədbirləri və audit bacarıqlarını öyrədəcək.",
+      "The ISO/IEC 27001 international standard defines requirements for establishing, implementing, maintaining, and continuously improving an organization's information security management system (ISMS). This training program teaches risk assessment, control measures, and audit skills."
+    ),
+      duration: t("2 / 5 gün (Transition – 2 gün)", "2 / 5 days (Transition – 2 days)"),
+      level: t("Fundamental / Lead Implementer / Lead Auditor", "Fundamental / Lead Implementer / Lead Auditor"),
     },
     {
       icon: Database,
       title: "ISO/IEC 20000",
-      subtitle: "IT Service Management",
-      description: "IT xidmət idarəetmə sistemlərinin standartları və tətbiqi",
+      subtitle: t("İT Xidmətlərinin İdarə Edilməsi", "IT Service Management"),
+      description: t(
+      "İT xidmət idarəetmə sistemlərinin standartları və tətbiqi",
+      "Standards and implementation of IT service management systems"
+    ),
       details:
-        "ISO/IEC 20000 IT xidmət idarəetməsi üçün beynəlxalq standartdır. Bu sertifikasiya proqramı ITSM proseslərinin planlaşdırılması, təşkili və idarə edilməsini əhatə edir. Xidmət səviyyəsi razılaşmaları, dəyişiklik idarəetməsi və davamlı təkmilləşdirmə metodologiyaları öyrədilir.",
-      duration: "2 / 5 gün",
-      level: "Foundation / Lead Implementer / Lead Auditor",
+        t(
+      "ISO/IEC 20000 IT xidmət idarəetməsi üzrə beynəlxalq standartdır. Təlim ITSM proseslərinin planlaşdırılması, təşkili və davamlı təkmilləşdirilməsi mövzularını əhatə edir.",
+      "ISO/IEC 20000 is the international standard for IT service management. The training covers planning, implementation, operation, and continual improvement of ITSM processes."
+    ),
+      duration: t("2 / 5 gün", "2 / 5 days"),
+      level: t(
+      "Foundation / Lead Implementer / Lead Auditor",
+      "Foundation / Lead Implementer / Lead Auditor"
+    ),
     },
     {
       icon: Lock,
-      title: "Kibertəhlükəsizlik",
-      subtitle: "Cybersecurity Training",
-      description: "Müasir kibertəhdidlərə qarşı müdafiə strategiyaları",
+      title: t("Kibertəhlükəsizlik", "Cybersecurity"),
+      subtitle: t("Kiber Təhlükəsizlik Təlimi", "Cybersecurity Training"),
+      description: t(
+      "Müasir kibertəhdidlərə qarşı müdafiə strategiyaları",
+      "Defense strategies against modern cyber threats"
+    ),
       details:
-        "Kibertəhlükəsizlik təlimi şəbəkə təhlükəsizliyi, təhdid kəşfiyyatı, hadisələrə cavab vermə və zərərli proqram təhlili kimi mövzuları əhatə edir. Praktik ssenarilərlə real dünya təhdidlərinə qarşı müdafiə bacarıqlarını inkişaf etdiririk.",
-      duration: "2-5 gün",
-      level: "Beginner to Advanced",
+        t(
+      "Bu təlim şəbəkə təhlükəsizliyi, təhdidlərin aşkarlanması, insidentlərə cavab və zərərli proqramların təhlilini əhatə edir. Praktiki ssenarilər üzərindən real risklərə yanaşma təqdim olunur.",
+      "This training covers network security, threat detection, incident response, and malware analysis, using practical scenarios to address real-world cyber risks."
+    ),
+      duration: t("2–5 gün", "2–5 days"),
+      level: t("Başlanğıc – Peşəkar", "Beginner to Advanced"),
     },
     {
       icon: Brain,
-      title: "Süni İntellekt",
-      subtitle: "Artificial Intelligence",
-      description: "AI texnologiyalarının biznesə tətbiqi və idarə edilməsi",
+      title: t("Süni İntellekt", "Artificial Intelligence"),
+      subtitle: t("Süni İntellekt", "Artificial Intelligence"),
+      description: t(
+      "Süni intellekt texnologiyalarının biznesdə tətbiqi",
+      "Business application of artificial intelligence technologies"
+    ),
       details:
-        "Süni intellekt və maşın öyrənməsi texnologiyalarının biznes proseslərinə inteqrasiyası üzrə təlim. AI strategiyaları, etika məsələləri və praktik tətbiq üsulları öyrədilir.",
-      duration: "2-5 gün",
-      level: "Foundation / Professional",
+        t(
+      "Bu təlim süni intellekt və maşın öyrənməsi texnologiyalarının biznes proseslərinə inteqrasiyasını, AI strategiyalarını və etik yanaşmaları əhatə edir.",
+      "This training focuses on integrating AI and machine learning into business processes, including AI strategy development and ethical considerations."
+    ),
+      duration: t("2–5 gün", "2–5 days"),
+      level: t("Foundation / Professional", "Foundation / Professional"),
     },
     {
       icon: Award,
-      title: "ISO 9001",
-      subtitle: "Quality Management System",
-      description: "Keyfiyyət idarəetmə sistemlərinin qurulması və inkişafı",
+      title: t("ISO 9001", "ISO 9001"),
+      subtitle: t("Keyfiyyət İdarəetmə Sistemi", "Quality Management System"),
+      description: t(
+      "Keyfiyyət idarəetmə sistemlərinin qurulması və inkişafı",
+      "Design and improvement of quality management systems"
+    ),
       details:
-        "ISO 9001 keyfiyyət idarəetmə sistemləri standartı üzrə sertifikasiya təlimi. Proses yanaşması, müştəri məmnuniyyəti və davamlı təkmilləşdirmə prinsipləri əsasında təşkilatın keyfiyyət performansını artırmaq üsulları öyrədilir.",
-      duration: "2 / 5 gün",
-      level: "Foundation / Lead Implementer / Lead Auditor",
+        t(
+      "ISO 9001 üzrə təlim proses yanaşması, müştəri məmnuniyyəti və davamlı təkmilləşdirmə prinsipləri əsasında təşkilatın keyfiyyət performansını artırmağa yönəlib.",
+      "ISO 9001 training focuses on improving organizational quality performance through process approach, customer satisfaction, and continual improvement principles."
+    ),
+      duration: t("2 / 5 gün", "2 / 5 days"),
+      level: t(
+      "Foundation / Lead Implementer / Lead Auditor",
+      "Foundation / Lead Implementer / Lead Auditor"
+    ),
     },
     {
       icon: Network,
-      title: "Rəqəmsal Transformasiya",
-      subtitle: "Digital Transformation",
-      description: "Biznes proseslərinin rəqəmsallaşdırılması strategiyaları",
+      title: t("Rəqəmsal Transformasiya", "Digital Transformation"),
+      subtitle: t("Biznesin Rəqəmsallaşdırılması", "Business Digitalization"),
+      description: t(
+      "Biznes proseslərinin rəqəmsallaşdırılması strategiyaları",
+      "Strategies for digitizing business processes"
+    ),
       details:
-        "Rəqəmsal transformasiya təlimi təşkilatların texnoloji inkişaf strategiyalarını planlaşdırmaq və həyata keçirmək üçün lazımi bilik və bacarıqları təqdim edir. Cloud computing, IoT və data analytics kimi mövzular əhatə olunur.",
-      duration: "5 gün",
-      level: "Professional",
+        t(
+      "Bu təlim təşkilatların rəqəmsal strategiyalarını planlaşdırmaq və icra etmək üçün cloud, IoT və data analytics mövzularını əhatə edir.",
+      "This training enables organizations to plan and execute digital strategies, covering cloud computing, IoT, and data analytics."
+    ),
+      duration: t("5 gün", "5 days"),
+      level: t("Professional", "Professional"),
     },
   ];
 
