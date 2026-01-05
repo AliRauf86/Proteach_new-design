@@ -12,8 +12,8 @@ const TrainingPortfolioPage = () => {
       <SEO
         title={t("Təlim Portfeli | ProTeach", "Training Portfolio | ProTeach")}
         description={t(
-          "PROTEACH təlim portfeli - ISO, PECB və digər beynəlxalq standartlar üzrə peşəkar təlim proqramları.",
-          "PROTEACH training portfolio - Professional training programs on ISO, PECB and other international standards."
+          "ProTeach təlim portfeli - ISO, PECB və digər beynəlxalq standartlar üzrə peşəkar təlim proqramları.",
+          "ProTeach training portfolio - Professional training programs on ISO, PECB and other international standards."
         )}
         keywords={t(
           "təlim portfeli, ISO təlimi, PECB təlimi, peşəkar təlim, beynəlxalq standartlar",
@@ -21,9 +21,21 @@ const TrainingPortfolioPage = () => {
         )}
         canonical="https://proteach.az/training/portfolio"
         breadcrumb={[
-          { name: "Ana Səhifə", item: "https://proteach.az/" },
-          { name: "Təlimlər", item: "https://proteach.az/training" },
-          { name: "Təlim Portfeli", item: "https://proteach.az/training/portfolio" }
+    { 
+      position: 1, 
+      name: t("Ana Səhifə", "Home"), 
+      item: "https://proteach.az" 
+    },
+    { 
+      position: 2, 
+      name: t("Təlimlər", "Training"), 
+      item: "https://proteach.az/training" 
+    },
+    { 
+      position: 3, 
+      name: t("Təlim Portfeli", "Training Portfolio"), 
+      item: "https://proteach.az/training/portfolio" 
+    },
         ]}
       />
       
