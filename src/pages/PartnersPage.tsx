@@ -10,10 +10,10 @@ const PartnersPage = () => {
   return (
     <>
      <SEO
-        title={t("Tərəfdaşlar - ProTeach", "Partners - ProTeach")}
+        title={t("Tərəfdaşlar | ProTeach", "Partners | ProTeach")}
         description={t(
-          "PROTEACH-ın beynəlxalq tərəfdaşları - PECB və digər qlobal sertifikasiya orqanları ilə əməkdaşlıq.",
-          "PROTEACH's international partners - Collaboration with PECB and other global certification bodies."
+          "ProTeach-ın beynəlxalq tərəfdaşları - PECB və digər qlobal sertifikasiya orqanları ilə əməkdaşlıq.",
+          "ProTeach's international partners - Collaboration with PECB and other global certification bodies."
         )}
         keywords={t(
           "PECB tərəfdaş, sertifikasiya tərəfdaşları, ISO tərəfdaşlıq Azərbaycan",
@@ -22,7 +22,7 @@ const PartnersPage = () => {
         canonical="https://proteach.az/about/partners"
         ogImage="https://proteach.az/logo.png"
         breadcrumb={[
-          { name: "Ana Səhifə", url: "https://proteach.az/" },
+          { name: "Ana Səhifə", url: "https://proteach.az" },
           { name: "Haqqımızda", url: "https://proteach.az/about" },
           { name: "Tərəfdaşlar", url: "https://proteach.az/about/partners" }
         ]}
