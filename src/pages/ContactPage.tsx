@@ -10,7 +10,7 @@ const ContactPage = () => {
   return (
     <>
       <SEO
-        title={t("Əlaqə | PROTEACH", "Contact | PROTEACH")}
+        title={t("Əlaqə | ProTeach", "Contact | ProTeach")}
         description={t(
           "PROTEACH ilə əlaqə saxlayın. Təlim və sertifikasiya proqramları haqqında məlumat almaq üçün bizimlə əlaqə qurun.",
           "Contact PROTEACH. Get in touch with us for information about training and certification programs."
@@ -20,9 +20,17 @@ const ContactPage = () => {
           "contact, contact information, PROTEACH contact, contact us"
         )}
         url="https://proteach.az/contact"
-        breadcrumbs={[
-          { name: "Ana Səhifə", url: "https://proteach.az" },
-          { name: "Əlaqə", url: "https://proteach.az/contact" }
+        breadcrumb={[ 
+    { 
+      position: 1, 
+      name: t("Ana Səhifə", "Home"), 
+      item: "https://proteach.az" 
+    },
+    { 
+      position: 2, 
+      name: t("Əlaqə", "Contact"), 
+      item: "https://proteach.az/contact" 
+    },
         ]}
       />
       
