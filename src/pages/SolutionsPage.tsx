@@ -21,8 +21,16 @@ const SolutionsPage = () => {
         )}
         url="https://proteach.az/solutions"
         breadcrumb={[
-          { name: "Ana Səhifə", item: "https://proteach.az" },
-          { name: "Həllər", item: "https://proteach.az/solutions" }
+    { 
+      position: 1, 
+      name: t("Ana Səhifə", "Home"), 
+      item: "https://proteach.az" 
+    },
+    { 
+      position: 2, 
+      name: t("Həllər", "Solutions"), 
+      item: "https://proteach.az/solutions" 
+    },
         ]}
       />
       <div className="min-h-screen">
