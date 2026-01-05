@@ -3,6 +3,8 @@ import digitalTransformation from "@/assets/digital-transformation.jpg";
 import { useLanguage } from "@/contexts/LanguageContext";
 
 const Solutions = () => {
+  const { t } = useLanguage();
+  
   const solutions = [
     {
       icon: TrendingUp,
