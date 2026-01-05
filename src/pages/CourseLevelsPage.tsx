@@ -22,11 +22,23 @@ const CourseLevelsPage = () => {
           "kurs səviyyələri, təlim müddətləri, Foundation, Lead Implementer, Lead Auditor",
           "course levels, training duration, Foundation, Lead Implementer, Lead Auditor"
         )}
-        canonical="https://proteach.az/training/levels"
-        breadcrumbs={[
-          { name: "Ana Səhifə", url: "https://proteach.az/" },
-          { name: "Təlimlər", url: "https://proteach.az/training" },
-          { name: "Kurs Səviyyələri", url: "https://proteach.az/training/levels" }
+        url="https://proteach.az/training/levels" 
+  breadcrumb={[ 
+    { 
+      position: 1, 
+      name: t("Ana Səhifə", "Home"), 
+      item: "https://proteach.az"
+    },
+    { 
+      position: 2, 
+      name: t("Təlimlər", "Training"), 
+      item: "https://proteach.az/training" 
+    },
+    { 
+      position: 3, 
+      name: t("Kurs Səviyyələri", "Course Levels"), 
+      item: "https://proteach.az/training/levels" 
+    },
         ]}
       />
       
