@@ -14,7 +14,7 @@ const NotFound = () => {
   return (
     <>
       <SEO
-        title="404 - Səhifə Tapılmadı | PROTEACH"
+        title="404 - Səhifə Tapılmadı | ProTeach"
         description="Axtardığınız səhifə tapılmadı. Zəhmət olmasa ana səhifəyə qayıdın."
         url={`https://proteach.az${location.pathname}`}
         keywords=""
