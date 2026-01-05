@@ -21,9 +21,21 @@ const CertificationCriteriaPage = () => {
         )}
         url="https://proteach.az/training/criteria"
         breadcrumb={[
-          { position: 1, name: "Ana Səhifə", item: "https://proteach.az" },
-          { position: 2, name: "Təlimlər", item: "https://proteach.az/training" },
-          { position: 3, name: "Sertifikatlaşdırma Meyarları", item: "https://proteach.az/training/criteria" },
+          { 
+      position: 1, 
+      name: t("Ana Səhifə", "Home"), 
+      item: "https://proteach.az" 
+    },
+    { 
+      position: 2, 
+      name: t("Təlimlər", "Training"), 
+      item: "https://proteach.az/training" 
+    },
+    { 
+      position: 3, 
+      name: t("Sertifikatlaşdırma Meyarları", "Certification Criteria"), 
+      item: "https://proteach.az/training/criteria" 
+    },
         ]}
       />
       
