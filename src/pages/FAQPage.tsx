@@ -23,7 +23,7 @@ const FAQPage = () => {
   return (
     <>
       <SEO
-        title={t("Tez-tez Verilən Suallar - ProTeach", "Frequently Asked Questions - ProTeach")}
+        title={t("Tez-tez Verilən Suallar | ProTeach", "Frequently Asked Questions | ProTeach")}
         description={t(
           "PROTEACH təlim və sertifikasiya proqramları haqqında tez-tez verilən suallar və cavablar.",
           "Frequently asked questions and answers about PROTEACH training and certification programs."
@@ -32,9 +32,9 @@ const FAQPage = () => {
           "FAQ, suallar və cavablar, təlim sualları, sertifikasiya sualları",
           "FAQ, questions and answers, training questions, certification questions"
         )}
-        canonical="https://proteach.az/faq"
+        url="https://proteach.az/faq"
         breadcrumbs={[
-          { name: "Ana Səhifə", url: "https://proteach.az/" },
+          { name: "Ana Səhifə", url: "https://proteach.az" },
           { name: "Tez-tez Verilən Suallar", url: "https://proteach.az/faq" }
         ]}
         faq={faqStructuredData.map(f => ({
