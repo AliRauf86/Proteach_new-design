@@ -1,36 +1,51 @@
 import { Lightbulb, Target, Users, Zap } from "lucide-react";
 import { Button } from "./ui/button";
 import { Link } from "react-router-dom";
+import { useLanguage } from "@/contexts/LanguageContext";
 
 const Consultation = () => {
+  const { t } = useLanguage();
+  
   const services = [
     {
       icon: Target,
-      title: "Strateji Planlama",
-      description: "Müvafiq yanaşmalar əsasında idarəetmə modelinin və strateji yol xəritəsinin formalaşdırılması",
+      title: t("Strateji Planlama", "Strategic Planning"),
+      description: t(
+        "Müvafiq yanaşmalar əsasında idarəetmə modelinin və strateji yol xəritəsinin formalaşdırılması",
+        "Development of management model and strategic roadmap based on relevant approaches"
+      ),
     },
     {
       icon: Zap,
-      title: "Proses Optimallaşdırması",
-      description: "ITIL və ISO tələblərinə uyğun proseslərin təhlili, boşluqların müəyyən edilməsi və təkmilləşdirilməsi üsulları",
+      title: t("Proses Optimallaşdırması", "Process Optimization"),
+      description: t(
+        "ITIL və ISO tələblərinə uyğun proseslərin təhlili, boşluqların müəyyən edilməsi və təkmilləşdirilməsi üsulları",
+        "Analysis of processes according to ITIL and ISO requirements, identifying gaps and improvement methods"
+      ),
     },
     {
       icon: Lightbulb,
-      title: "Standartlara Uyğunluq",
-      description: "ISO/IEC standartlarının təşkilati mühitə inteqrasiyası və davamlı uyğunluğun təmin edilməsi",
+      title: t("Standartlara Uyğunluq", "Standards Compliance"),
+      description: t(
+        "ISO/IEC standartlarının təşkilati mühitə inteqrasiyası və davamlı uyğunluğun təmin edilməsi",
+        "Integration of ISO/IEC standards into organizational environment and ensuring continuous compliance"
+      ),
     },
     {
       icon: Users,
-      title: "Dəyişikliklərin İdarəedilməsi",
-      description: "Komanda səriştələrinin inkişafı, rol bölgüsü və dəyişikliklərin effektiv şəkildə idarə olunması",
+      title: t("Dəyişikliklərin İdarəedilməsi", "Change Management"),
+      description: t(
+        "Komanda səriştələrinin inkişafı, rol bölgüsü və dəyişikliklərin effektiv şəkildə idarə olunması",
+        "Development of team competencies, role allocation, and effective management of changes"
+      ),
     },
   ];
 
   const process = [
-    { step: "01", title: "Analiz", desc: "Proseslər üzrə cari vəziyyətin qiymətləndirilməsi" },
-    { step: "02", title: "Prioritetləşdirmə", desc: "Tələblərin müəyyən edilməsi və sənədləşmə" },
-    { step: "03", title: "Həllərin Tətbiqi", desc: "Tövsiyələrin dizaynı və həyata keçirilməsi" },
-    { step: "04", title: "Monitorinq", desc: "Performans göstəricilərinin izlənməsi və optimallaşdırma" },
+    { step: "01", title: t("Analiz", "Analysis"), desc: t("Proseslər üzrə cari vəziyyətin qiymətləndirilməsi", "Evaluation of current process status") },
+    { step: "02", title: t("Prioritetləşdirmə", "Prioritization"), desc: t("Tələblərin müəyyən edilməsi və sənədləşmə", "Requirement identification and documentation") },
+    { step: "03", title: t("Həllərin Tətbiqi", "Solution Implementation"), desc: t("Tövsiyələrin dizaynı və həyata keçirilməsi", "Designing and implementing recommendations") },
+    { step: "04", title: t("Monitorinq", "Monitoring"), desc: t("Performans göstəricilərinin izlənməsi və optimallaşdırma", "Monitoring performance indicators and optimization") },
   ];
 
   return (
@@ -42,10 +57,13 @@ const Consultation = () => {
       <div className="container mx-auto px-4 relative z-10">
         <div className="text-center mb-16 animate-fade-in">
           <h2 className="text-4xl lg:text-5xl font-bold mb-4">
-            Konsultasiya <span className="gradient-text">Xidmətləri</span>
+            {t("Konsultasiya", "Consultation")} <span className="gradient-text">{t("Xidmətləri", "Services")}</span>
           </h2>
           <p className="text-lg text-muted-foreground max-w-2xl mx-auto">
-            Ən yaxşı təcrübəyə və standartlara əsaslanan konsaltinq yanaşması ilə davamlı inkişafı təmin edin
+            {t(
+              "Ən yaxşı təcrübəyə və standartlara əsaslanan konsaltinq yanaşması ilə davamlı inkişafı təmin edin",
+              "Ensure continuous development with a consulting approach based on best practices and standards"
+            )}
           </p>
         </div>
 
@@ -69,7 +87,7 @@ const Consultation = () => {
         {/* Consultation Process */}
         <div className="max-w-6xl mx-auto">
           <h3 className="text-3xl font-bold text-center mb-12">
-            Konsultasiya <span className="gradient-text">Prosesi</span>
+            {t("Konsultasiya", "Consultation")} <span className="gradient-text">{t("Prosesi", "Process")}</span>
           </h3>
           <div className="grid md:grid-cols-4 gap-6">
             {process.map((item, index) => (
@@ -91,15 +109,17 @@ const Consultation = () => {
         <div className="mt-16 text-center">
           <div className="glass-dark rounded-2xl p-12 max-w-4xl mx-auto">
             <h3 className="text-3xl font-bold mb-4 text-navy">
-              Davamlı və Ölçüləbilən İnkişaf Üçün Konsultasiya
+              {t("Davamlı və Ölçüləbilən İnkişaf Üçün Konsultasiya", "Consultation for Sustainable and Measurable Development")}
             </h3>
             <p className="text-lg text-muted-foreground mb-8 max-w-2xl mx-auto">
-              Peşəkar konsultantlarımızla görüşərək şirkətinizin ehtiyaclarını müzakirə edin və fərdi
-              həll yolları əldə edin
+              {t(
+                "Peşəkar konsultantlarımızla görüşərək şirkətinizin ehtiyaclarını müzakirə edin və fərdi həll yolları əldə edin",
+                "Meet with our professional consultants to discuss your company's needs and receive tailored solutions"
+              )}
             </p>
             <Button size="lg" className="bg-accent hover:bg-accent/90 text-white px-8">
               <Link to="/contact">
-                Konsultasiya AL
+                {t("Konsultasiya AL", "Get Consultation")}
               </Link>  
             </Button>
           </div>
