@@ -5,23 +5,47 @@ const Solutions = () => {
   const solutions = [
     {
       icon: TrendingUp,
-      title: "Layihələrin İdarəolunması",
-      description: "Peşəkar layihə idarəetmə və planlaşdırma xidmətləri",
+      title: t(
+        "Layihələrin İdarəolunması",
+        "Project Management"
+      ),
+      description: t(
+        "Peşəkar layihə idarəetmə və planlaşdırma xidmətləri",
+        "Professional project management and planning services"
+      ),
     },
     {
       icon: Cloud,
-      title: "ERP Həlləri",
-      description: "Müəssisə resurs planlaşdırması sistemlərinin tətbiqi",
+      title: t(
+        "ERP Həlləri",
+        "ERP Solutions"
+      ),
+      description: t(
+        "Müəssisə resurs planlaşdırması sistemlərinin tətbiqi",
+        "Implementation of enterprise resource planning systems"
+      ),
     },
     {
       icon: Code,
-      title: "Proqram Təminatı",
-      description: "Veb və desktop proqram təminatlarının hazırlanması",
+      title: t(
+        "Proqram Təminatı",
+        "Software Development"
+      ),
+      description: t(
+        "Veb və desktop proqram təminatlarının hazırlanması",
+        "Development of web and desktop software solutions"
+      ),
     },
     {
       icon: Cog,
-      title: "Proses Optimallaşdırması",
-      description: "Biznes proseslərinin avtomatlaşdırılması və təkmilləşdirilməsi",
+      title: t(
+        "Proses Optimallaşdırması",
+        "Process Optimization"
+      ),
+      description: t(
+        "Biznes proseslərinin avtomatlaşdırılması və təkmilləşdirilməsi",
+        "Automation and improvement of business processes"
+      ),
     },
   ];
 
@@ -34,10 +58,13 @@ const Solutions = () => {
       <div className="container mx-auto px-4 relative z-10">
         <div className="text-center mb-16 animate-fade-in">
           <h2 className="text-4xl lg:text-5xl font-bold mb-4">
-            Rəqəmsal <span className="gradient-text">Transformasiya Həlləri</span>
+            {t("Rəqəmsal", "Digital")} <span className="gradient-text">{t("Transformasiya Həlləri", "Transformation Solutions")}</span>
           </h2>
           <p className="text-lg text-muted-foreground max-w-2xl mx-auto">
-            Rəqəmsal transformasiya həlləri ilə biznesinizə dəyər qatırıq
+            {t(
+              "Rəqəmsal transformasiya həlləri ilə biznesinizə dəyər qatırıq",
+              "We add value to your business through digital transformation solutions"
+            )}
           </p>
         </div>
 
@@ -48,7 +75,7 @@ const Solutions = () => {
               <div className="absolute -inset-4 bg-gradient-to-br from-accent/20 to-magenta/20 rounded-3xl blur-2xl" />
               <img
                 src={digitalTransformation}
-                alt="Digital Transformation"
+                alt={t("Rəqəmsal Transformasiya", "Digital Transformation")}
                 className="relative rounded-3xl shadow-2xl w-full h-[500px] object-cover border-4 border-accent/30"
               />
             </div>
@@ -76,9 +103,10 @@ const Solutions = () => {
         <div className="mt-16 text-center max-w-4xl mx-auto">
           <div className="glass-dark rounded-2xl p-8">
             <p className="text-lg text-muted-foreground leading-relaxed">
-              Rəqəmsal transformasiya yolunda sizin etibarlı tərəfdaşınızıq. Müasir texnologiyalardan
-              istifadə edərək biznes proseslərinizi optimallaşdırır, səmərəliliyinizi artırır və
-              rəqabət üstünlüyünüzü möhkəmləndiririik.
+              {t(
+                "Rəqəmsal transformasiya yolunda sizin etibarlı tərəfdaşınızıq. Müasir texnologiyalardan istifadə edərək biznes proseslərinizi optimallaşdırır, səmərəliliyinizi artırır və rəqabət üstünlüyünüzü möhkəmləndiririk.",
+                "We are your trusted partner on the digital transformation journey. By leveraging modern technologies, we optimize your business processes, increase efficiency, and strengthen your competitive advantage."
+              )}
             </p>
           </div>
         </div>
