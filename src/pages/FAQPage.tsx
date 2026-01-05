@@ -33,7 +33,7 @@ const FAQPage = () => {
           "FAQ, questions and answers, training questions, certification questions"
         )}
         url="https://proteach.az/faq"
-        breadcrumb={[ // 'breadcrumbs' yox, 'breadcrumb'
+        breadcrumb={[
           { 
             position: 1, 
             name: t("Ana Səhifə", "Home"), 
@@ -45,10 +45,7 @@ const FAQPage = () => {
             item: "https://proteach.az/faq" 
           }
         ]}
-        faq={faqStructuredData.map(f => ({
-          question: f.question,
-          answer: f.answer
-        }))}
+        faq={faqStructuredData}
       />
       
       <div className="min-h-screen">
