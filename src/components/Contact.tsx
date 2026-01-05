@@ -6,8 +6,11 @@ import { Textarea } from "./ui/textarea";
 import { Select, SelectContent, SelectItem, SelectTrigger, SelectValue } from "./ui/select";
 import { toast } from "sonner";
 import emailjs from '@emailjs/browser';
+import { useLanguage } from "@/contexts/LanguageContext";
 
 const Contact = () => {
+  const { t } = useLanguage();
+  
   const [formData, setFormData] = useState({
     name: "",
     email: "",
@@ -32,7 +35,10 @@ const Contact = () => {
       '4IPEtW6qlCBW7klXl'
     );
     
-    toast.success("Mesajınız göndərildi! Tezliklə sizinlə əlaqə saxlayacağıq.");
+    toast.success(t(
+      "Mesajınız göndərildi! Tezliklə sizinlə əlaqə saxlayacağıq.",
+      "Your message has been sent! We will contact you shortly."
+    ));
     setFormData({ name: "", email: "", phone: "", subject: "", message: "" });
   };
 
@@ -53,10 +59,13 @@ const Contact = () => {
       <div className="container mx-auto px-4 relative z-10">
         <div className="text-center mb-16 animate-fade-in">
           <h2 className="text-4xl lg:text-5xl font-bold mb-4">
-            Bizimlə <span className="gradient-text">Əlaqə</span>
+            {t("Bizimlə", "Get in touch with")} <span className="gradient-text">{t("Əlaqə", "Us")}</span>
           </h2>
           <p className="text-lg text-muted-foreground max-w-2xl mx-auto">
-            Təlimlərə qeydiyyat və ya suallarınız üçün bizə müraciət edin
+            {t(
+              "Təlimlərə qeydiyyat və ya suallarınız üçün bizə müraciət edin",
+              "Contact us for training registration or any inquiries"
+            )}
           </p>
         </div>
 
@@ -64,14 +73,14 @@ const Contact = () => {
           {/* Contact Information */}
           <div className="space-y-8 animate-fade-in">
             <div className="glass-dark rounded-2xl p-8 space-y-6">
-              <h3 className="text-2xl font-bold text-navy mb-6">Əlaqə Məlumatları</h3>
+              <h3 className="text-2xl font-bold text-navy mb-6">{t("Əlaqə Məlumatları", "Contact Information")}</h3>
 
               <div className="flex items-start gap-4 hover-lift p-4 rounded-lg transition-all">
                 <div className="w-12 h-12 rounded-full bg-accent/10 flex items-center justify-center flex-shrink-0">
                   <Phone className="w-6 h-6 text-accent" />
                 </div>
                 <div>
-                  <p className="font-semibold text-navy mb-1">Telefon</p>
+                  <p className="font-semibold text-navy mb-1">{t("Telefon", "Phone")}</p>
                   <a href="tel:+994552877884" className="text-muted-foreground hover:text-accent">
                     +994 55 287 78 84
                   </a>
@@ -83,7 +92,7 @@ const Contact = () => {
                   <Mail className="w-6 h-6 text-magenta" />
                 </div>
                 <div>
-                  <p className="font-semibold text-navy mb-1">Email</p>
+                  <p className="font-semibold text-navy mb-1">{t("Email", "Email")</p>
                   <a
                     href="mailto:info@proteach.az"
                     className="text-muted-foreground hover:text-accent"
@@ -98,8 +107,8 @@ const Contact = () => {
                   <MapPin className="w-6 h-6 text-accent" />
                 </div>
                 <div>
-                  <p className="font-semibold text-navy mb-1">Ünvan</p>
-                  <p className="text-muted-foreground">Bakı, Azərbaycan</p>
+                  <p className="font-semibold text-navy mb-1">{t("Ünvan", "Address")}</p>
+                  <p className="text-muted-foreground">{t("Bakı, Azərbaycan", "Baku, Azerbaijan")}</p>
                 </div>
               </div>
             </div>
@@ -109,18 +118,18 @@ const Contact = () => {
           <div className="animate-fade-in-up">
             <form onSubmit={handleSubmit} className="glass-dark rounded-2xl p-8 space-y-6">
               
-      <h3 className="text-2xl font-bold text-navy mb-6">Mesaj Göndərin</h3>
+      <h3 className="text-2xl font-bold text-navy mb-6">{t("Mesaj Göndərin", "Send a Message")}</h3>
 
               <div>
                 <label htmlFor="name" className="block text-sm font-medium text-navy mb-2">
-                  Ad Soyad
+                  {t("Ad Soyad", "Full Name")}
                 </label>
                 <Input
                   id="name"
                   name="name"
                   value={formData.name}
                   onChange={handleChange}
-                  placeholder="Adınızı daxil edin"
+                  placeholder={t("Adınızı daxil edin", "Enter your name")}
                   required
                   className="bg-background"
                 />
@@ -128,7 +137,7 @@ const Contact = () => {
 
               <div>
                 <label htmlFor="email" className="block text-sm font-medium text-navy mb-2">
-                  Email
+                  {t("Email", "Email")}
                 </label>
                 <Input
                   id="email"
@@ -144,7 +153,7 @@ const Contact = () => {
 
               <div>
                 <label htmlFor="phone" className="block text-sm font-medium text-navy mb-2">
-                  Telefon
+                  {t("Telefon", "Phone")}
                 </label>
                 <Input
                   id="phone"
@@ -158,30 +167,30 @@ const Contact = () => {
 
               <div>
                 <label htmlFor="subject" className="block text-sm font-medium text-navy mb-2">
-                  Mövzu
+                  {t("Mövzu", "Subject")}
                 </label>
                 <Select value={formData.subject} onValueChange={handleSelectChange}>
                   <SelectTrigger className="bg-background">
-                    <SelectValue placeholder="Mövzu seçin" />
+                    <SelectValue placeholder={t("Mövzu seçin", "Select subject")} />
                   </SelectTrigger>
                   <SelectContent>
-                    <SelectItem value="Consultation">Konsultasiya</SelectItem>
-                    <SelectItem value="Corporate training">Korporativ təlim</SelectItem>
-                    <SelectItem value="Online training">Onlayn təlim</SelectItem>
+                    <SelectItem value="Consultation">{t("Konsultasiya", "Consultation")}</SelectItem>
+                    <SelectItem value="Corporate training">{t("Korporativ təlim", "Corporate training")}</SelectItem>
+                    <SelectItem value="Online training">{t("Onlayn təlim", "Online training")}</SelectItem>
                   </SelectContent>
                 </Select>
               </div>
 
               <div>
                 <label htmlFor="message" className="block text-sm font-medium text-navy mb-2">
-                  Mesaj
+                  {t("Mesaj", "Message")}
                 </label>
                 <Textarea
                   id="message"
                   name="message"
                   value={formData.message}
                   onChange={handleChange}
-                  placeholder="Mesajınızı yazın..."
+                  placeholder={t("Mesajınızı yazın...", "Write your message...")}
                   rows={5}
                   required
                   className="bg-background resize-none"
@@ -194,7 +203,7 @@ const Contact = () => {
                 size="lg"
               >
                 <Send className="w-4 h-4 mr-2" />
-                Göndər
+                {t("Göndər", "Send")}
               </Button>
             </form>
           </div>
