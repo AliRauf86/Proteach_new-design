@@ -20,15 +20,17 @@ const ConsultationPage = () => {
           "IT consulting, information security, risk management, technology audit, IT strategy"
         )}
         canonical="https://proteach.az/consultation"
-        breadcrumbs={[
-          {
-            name: "Ana Səhifə",
-            url: "https://proteach.az",
-          },
-          {
-            name: "Konsultasiya",
-            url: "https://proteach.az/consultation",
-          },
+        breadcrumb={[ 
+    { 
+      position: 1, 
+      name: t("Ana Səhifə", "Home"), 
+      item: "https://proteach.az" 
+    },
+    { 
+      position: 2, 
+      name: t("Konsultasiya", "Consultation"), 
+      item: "https://proteach.az/consultation" 
+    },
         ]}
       />
       
