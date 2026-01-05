@@ -92,7 +92,7 @@ const Contact = () => {
                   <Mail className="w-6 h-6 text-magenta" />
                 </div>
                 <div>
-                  <p className="font-semibold text-navy mb-1">{t("Email", "Email")</p>
+                  <p className="font-semibold text-navy mb-1">{t("Email", "Email")}</p>
                   <a
                     href="mailto:info@proteach.az"
                     className="text-muted-foreground hover:text-accent"
