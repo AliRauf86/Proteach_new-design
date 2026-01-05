@@ -19,12 +19,23 @@ const PartnersPage = () => {
           "PECB tərəfdaş, sertifikasiya tərəfdaşları, ISO tərəfdaşlıq Azərbaycan",
           "PECB partner, certification partners, ISO partnership Azerbaijan"
         )}
-        canonical="https://proteach.az/about/partners"
-        ogImage="https://proteach.az/logo.png"
-        breadcrumb={[
-          { name: "Ana Səhifə", url: "https://proteach.az" },
-          { name: "Haqqımızda", url: "https://proteach.az/about" },
-          { name: "Tərəfdaşlar", url: "https://proteach.az/about/partners" }
+        url="https://proteach.az/about/partners"
+  breadcrumb={[
+    { 
+      position: 1, 
+      name: t("Ana Səhifə", "Home"), 
+      item: "https://proteach.az" 
+    },
+    { 
+      position: 2, 
+      name: t("Haqqımızda", "About Us"), 
+      item: "https://proteach.az/about" 
+    },
+    { 
+      position: 3, 
+      name: t("Tərəfdaşlar", "Partners"), 
+      item: "https://proteach.az/about/partners" 
+    },
         ]}
       />
       
