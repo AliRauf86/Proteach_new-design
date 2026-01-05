@@ -10,7 +10,7 @@ const SolutionsPage = () => {
   return (
     <>
       <SEO
-        title={t("Rəqəmsal Transformasiya Həlləri - ProTeach", "Digital Transformation Solutions - ProTeach")}
+        title={t("Rəqəmsal Transformasiya Həlləri | ProTeach", "Digital Transformation Solutions | ProTeach")}
         description={t(
           "ERP sistemləri, layihə idarəetməsi, proqram təminatı və proses optimallaşdırması. Biznesinizi rəqəmsal dövrə çevirin.",
           "ERP systems, project management, software solutions and process optimization. Transform your business into the digital age."
@@ -19,9 +19,9 @@ const SolutionsPage = () => {
           "rəqəmsal transformasiya, ERP həlləri, layihə idarəetməsi, proqram təminatı, proses optimallaşdırması",
           "digital transformation, ERP solutions, project management, software solutions, process optimization"
         )}
-        canonical="https://proteach.az/solutions"
+        url="https://proteach.az/solutions"
         breadcrumb={[
-          { name: "Ana Səhifə", item: "https://proteach.az/" },
+          { name: "Ana Səhifə", item: "https://proteach.az" },
           { name: "Həllər", item: "https://proteach.az/solutions" }
         ]}
       />
