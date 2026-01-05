@@ -10,28 +10,34 @@ const Certification = () => {
     {
       icon: GraduationCap,
       title: "Foundation",
-      description: "Əsas bilik və anlayışlar",
-      features: ["Fundamental konsepsiyalar", "Standartlara giriş", "Praktik nümunələr"],
+      description: t("Əsas bilik və anlayışlar", "Fundamental knowledge and concepts"),
+      features: [t("Fundamental konsepsiyalar", "Fundamental concepts"),
+        t("Standartlara giriş", "Introduction to standards"),
+        t("Praktik nümunələr", "Practical examples"),],
     },
     {
       icon: Award,
       title: "Professional",
-      description: "İrəliləmiş praktik bacarıqlar",
-      features: ["Dərin texniki bilik", "Real layihə təcrübəsi", "Risk idarəetməsi"],
+      description: t("İrəliləmiş praktik bacarıqlar", "Advanced practical skills"),
+      features: [t("Dərin texniki bilik", "In-depth technical knowledge"),
+        t("Real layihə təcrübəsi", "Real project experience"),
+        t("Risk idarəetməsi", "Risk management"),],
     },
     {
       icon: Globe,
       title: "Lead Auditor",
-      description: "Audit və qiymətləndirmə",
-      features: ["Audit prosesləri", "Standartlara uyğunluq", "Hesabat hazırlama"],
+      description: t("Audit və qiymətləndirmə", "Audit and assessment"),
+      features: [t("Audit prosesləri", "Audit processes"),
+        t("Standartlara uyğunluq", "Compliance with standards"),
+        t("Hesabat hazırlama", "Report preparation"),],
     },
   ];
 
   const benefits = [
-    "PECB tərəfindən beynəlxalq tanınan sertifikatlar",
-    "Əyani, online və self-study formatlar",
-    "Güzəştli imtahan şərtləri",
-    "Karyera inkişafı imkanları",
+    t("PECB tərəfindən beynəlxalq tanınan sertifikatlar", "Internationally recognized certificates by PECB"),
+    t("Əyani, online və self-study formatlar", "Classroom, online, and self-study formats"),
+    t("Güzəştli imtahan şərtləri", "Discounted exam conditions"),
+    t("Karyera inkişafı imkanları", "Career development opportunities"),
   ];
 
   return (
@@ -43,10 +49,13 @@ const Certification = () => {
       <div className="container mx-auto px-4 relative z-10">
         <div className="text-center mb-16 animate-fade-in">
           <h2 className="text-4xl lg:text-5xl font-bold mb-4 text-white">
-            Peşəkar <span className="gradient-text">Sertifikasiya</span>
+            Peşəkar <span className="gradient-text">{t("Sertifikasiya", "Certification")}</span>
           </h2>
           <p className="text-lg text-gray-300 max-w-2xl mx-auto">
-            Beynəlxalq tanınan ISO sertifikatları əldə edin və karyeranızı inkişaf etdirin
+            {t(
+              "Beynəlxalq tanınan ISO sertifikatları əldə edin və karyeranızı inkişaf etdirin",
+              "Obtain internationally recognized ISO certifications and advance your career"
+            )}
           </p>
         </div>
 
@@ -79,7 +88,7 @@ const Certification = () => {
         <div className="max-w-4xl mx-auto">
           <div className="glass rounded-2xl p-8 lg:p-12">
             <h3 className="text-3xl font-bold text-white mb-8 text-center">
-              Niyə PROTEACH Sertifikasiyası?
+              {t("Niyə PROTEACH Sertifikasiyası?", "Why PROTEACH Certification?")}
             </h3>
             <div className="grid md:grid-cols-2 gap-6 mb-8">
               {benefits.map((benefit, index) => (
@@ -96,7 +105,7 @@ const Certification = () => {
                 asChild
                 size="lg" className="bg-accent hover:bg-accent/90 text-white px-8">
                 <Link to="/training/criteria">
-    Sertifikasiya Proqramları
+    {t("Sertifikasiya Proqramları", "Certification Programs")}
   </Link>
               </Button>
             </div>
