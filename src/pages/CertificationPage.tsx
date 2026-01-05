@@ -13,8 +13,8 @@ const CertificationPage = () => {
     <>
       <SEO
         title={t(
-          "Sertifikasiya Proqramları - ProTeach",
-          "Certification Programs - ProTeach"
+          "Sertifikasiya Proqramları | ProTeach",
+          "Certification Programs | ProTeach"
         )}
         description={t(
           "Beynəlxalq tanınan PECB sertifikatları: Foundation, Professional və Lead Auditor səviyyələri. ISO standartları üzrə sertifikasiya.",
@@ -27,15 +27,15 @@ const CertificationPage = () => {
         url="https://proteach.az/certification"
         breadcrumb={[
           {
-            position: 1,
-            name: "Ana Səhifə",
-            item: "https://proteach.az/",
-          },
-          {
-            position: 2,
-            name: "Sertifikasiya",
-            item: "https://proteach.az/certification",
-          },
+      position: 1,
+      name: t("Ana Səhifə", "Home"),
+      item: "https://proteach.az", 
+    },
+    {
+      position: 2,
+      name: t("Sertifikasiya", "Certification"),
+      item: "https://proteach.az/certification",
+    },
         ]}
       />
       
