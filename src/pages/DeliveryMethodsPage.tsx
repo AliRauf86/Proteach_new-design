@@ -22,20 +22,23 @@ const DeliveryMethodsPage = () => {
           "çatdırılma metodları, təlim kursları, əyani, virtual, e-öyrənmə, self-study",
           "delivery methods, training courses, classroom, virtual, e-learning, self-study"
         )}
-        canonical="https://proteach.az/training/delivery"
-        breadcrumbs={[
-          {
-            name: "Ana Səhifə",
-            url: "https://proteach.az/",
-          },
-          {
-            name: "Təlimlər",
-            url: "https://proteach.az/training",
-          },
-          {
-            name: "Çatdırılma Metodları",
-            url: "https://proteach.az/training/delivery",
-          },
+        url="https://proteach.az/training/delivery" 
+  breadcrumb={[ 
+    { 
+      position: 1, 
+      name: t("Ana Səhifə", "Home"), 
+      item: "https://proteach.az" 
+    },
+    { 
+      position: 2, 
+      name: t("Təlimlər", "Training"), 
+      item: "https://proteach.az/training" 
+    },
+    { 
+      position: 3, 
+      name: t("Çatdırılma Metodları", "Delivery Methods"), 
+      item: "https://proteach.az/training/delivery" 
+    },
         ]}
       />
       
