@@ -10,7 +10,7 @@ const AboutPage = () => {
   return (
     <>
       <SEO
-        title={t("Haqqımızda - ProTeach", "About Us - ProTeach")}
+        title={t("Haqqımızda | ProTeach", "About Us | ProTeach")}
         description={t(
           "ProTeach - Sertifikasiya və peşəkar təlim sahəsində aparıcı mərkəz. Beynəlxalq standartlar və keyfiyyətli xidmətlər.",
           "ProTeach - Leading center for certification and professional training. International standards and quality services."
@@ -21,8 +21,16 @@ const AboutPage = () => {
         )}
         url="https://proteach.az/about"
         breadcrumb={[
-          { position: 1, name: "Ana Səhifə", item: "https://proteach.az/" },
-          { position: 2, name: "Haqqımızda", item: "https://proteach.az/about" },
+          { 
+    position: 1, 
+    name: t("Ana Səhifə", "Home"), 
+    item: "https://proteach.az" 
+  },
+  { 
+    position: 2, 
+    name: t("Haqqımızda", "About Us"), 
+    item: "https://proteach.az/about" 
+  },
         ]}
       />
       
