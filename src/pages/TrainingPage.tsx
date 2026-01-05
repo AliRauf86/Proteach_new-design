@@ -14,7 +14,7 @@ const TrainingPage = () => {
   return (
     <>
       <SEO
-        title={t("Təlim Proqramları - ProTeach", "Training Programs - ProTeach")}
+        title={t("Təlim Proqramları | ProTeach", "Training Programs | ProTeach")}
         description={t(
           "ISO 27001, ISO 20000, ISO 9001, kibertəhlükəsizlik və rəqəmsal transformasiya üzrə peşəkar təlim proqramları. PECB akkreditə olunmuş təlimlər.",
           "Professional training programs on ISO 27001, ISO 20000, ISO 9001, cybersecurity and digital transformation. PECB accredited training."
@@ -23,9 +23,9 @@ const TrainingPage = () => {
           "ISO təlimi, sertifikasiya təlimi, kibertəhlükəsizlik təlimi, PECB təlimi, peşəkar inkişaf",
           "ISO training, certification training, cybersecurity training, PECB training, professional development"
         )}
-        canonical="https://proteach.az/training"
+        url="https://proteach.az/training"
         breadcrumb={[
-          { name: "Ana Səhifə", item: "https://proteach.az/" },
+          { name: "Ana Səhifə", item: "https://proteach.az" },
           { name: "Təlimlər", item: "https://proteach.az/training" }
         ]}
       />
