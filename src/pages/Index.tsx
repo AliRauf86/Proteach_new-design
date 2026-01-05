@@ -18,8 +18,8 @@ const Index = () => {
     <>
       <SEO
         title={t(
-          "PROTEACH - Peşəkar Tədris və Sertifikasiya Mərkəzi",
-          "PROTEACH - Professional Training and Certification Center"
+          "ProTeach - Peşəkar Tədris və Sertifikasiya Mərkəzi",
+          "ProTeach - Professional Training and Certification Center"
         )}
         description={t(
           "ISO sertifikasiya, peşəkar təlimlər və IT konsultasiya xidmətləri. Beynəlxalq tanınan PECB sertifikatları, kibertəhlükəsizlik və rəqəmsal transformasiya həlləri.",
