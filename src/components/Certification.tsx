@@ -1,8 +1,11 @@
 import { Award, CheckCircle, GraduationCap, Globe } from "lucide-react";
 import { Button } from "./ui/button";
 import { Link } from "react-router-dom";
+import { useLanguage } from "@/contexts/LanguageContext";
 
 const Certification = () => {
+  const { t } = useLanguage();
+  
   const certificationTypes = [
     {
       icon: GraduationCap,
