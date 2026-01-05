@@ -33,9 +33,17 @@ const FAQPage = () => {
           "FAQ, questions and answers, training questions, certification questions"
         )}
         url="https://proteach.az/faq"
-        breadcrumbs={[
-          { name: "Ana Səhifə", url: "https://proteach.az" },
-          { name: "Tez-tez Verilən Suallar", url: "https://proteach.az/faq" }
+        breadcrumb={[ // 'breadcrumbs' yox, 'breadcrumb'
+          { 
+            position: 1, 
+            name: t("Ana Səhifə", "Home"), 
+            item: "https://proteach.az" 
+          },
+          { 
+            position: 2, 
+            name: t("Tez-tez Verilən Suallar", "FAQ"), 
+            item: "https://proteach.az/faq" 
+          }
         ]}
         faq={faqStructuredData.map(f => ({
           question: f.question,
