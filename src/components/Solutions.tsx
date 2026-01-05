@@ -1,5 +1,6 @@
 import { Cloud, Code, Cog, TrendingUp } from "lucide-react";
 import digitalTransformation from "@/assets/digital-transformation.jpg";
+import { useLanguage } from "@/contexts/LanguageContext";
 
 const Solutions = () => {
   const solutions = [
