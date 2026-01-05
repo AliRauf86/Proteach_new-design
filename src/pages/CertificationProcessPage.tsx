@@ -25,20 +25,20 @@ const CertificationProcessPage = () => {
         url="https://proteach.az/training/process"
         breadcrumb={[
           {
-            position: 1,
-            name: "Ana Səhifə",
-            item: "https://proteach.az/",
-          },
-          {
-            position: 2,
-            name: "Təlimlər",
-            item: "https://proteach.az/training",
-          },
-          {
-            position: 3,
-            name: "Sertifikatlaşdırma Prosesi",
-            item: "https://proteach.az/training/process",
-          },
+      position: 1,
+      name: t("Ana Səhifə", "Home"),
+      item: "https://proteach.az", 
+    },
+    {
+      position: 2,
+      name: t("Təlimlər", "Training"),
+      item: "https://proteach.az/training",
+    },
+    {
+      position: 3,
+      name: t("Sertifikatlaşdırma Prosesi", "Certification Process"), 
+      item: "https://proteach.az/training/process",
+    },
         ]}
       />
       
