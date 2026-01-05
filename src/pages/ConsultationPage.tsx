@@ -19,7 +19,7 @@ const ConsultationPage = () => {
           "IT konsultasiya, məlumat təhlükəsizliyi, risk idarəetməsi, texnoloji audit, IT strategiya",
           "IT consulting, information security, risk management, technology audit, IT strategy"
         )}
-        canonical="https://proteach.az/consultation"
+        url="https://proteach.az/consultation"
         breadcrumb={[ 
     { 
       position: 1, 
