@@ -27,7 +27,7 @@ const CourseLevelsPage = () => {
     { 
       position: 1, 
       name: t("Ana Səhifə", "Home"), 
-      item: "https://proteach.az"
+      item: "https://proteach.az/"
     },
     { 
       position: 2, 
