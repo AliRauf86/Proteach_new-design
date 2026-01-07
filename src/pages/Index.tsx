@@ -34,7 +34,7 @@ const Index = () => {
     {
       position: 1,
       name: t("Ana Səhifə", "Home"), 
-      item: "https://proteach.az",
+      item: "https://proteach.az/",
     },
         ]}
       />
