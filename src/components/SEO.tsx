@@ -27,7 +27,7 @@ const SEO = ({
   description,
   keywords,
   url,
-  ogImage = "https://proteach.az/opengraph-image.png",
+  ogImage = "https://proteach.az/logo.png",
   breadcrumb,
   faq,
 }: SEOProps) => {
@@ -55,17 +55,19 @@ const SEO = ({
       <meta name="twitter:description" content={description} />
       <meta name="twitter:image" content={ogImage} />
 
-      {/* Breadcrumb structured data */}
+      {/* Breadcrumb structured data - Düzəliş edilmiş hissə */}
       {breadcrumb && (
         <script type="application/ld+json">
           {JSON.stringify({
             "@context": "https://schema.org",
             "@type": "BreadcrumbList",
-            itemListElement: breadcrumb.map(item => ({
+            "itemListElement": breadcrumb.map((item) => ({
               "@type": "ListItem",
-              position: item.position,
-              name: item.name,
-              item: item.item,
+              "position": item.position,
+              "item": {
+                "@id": item.item, // Google-un 'Unnamed item' xətasını həll edir
+                "name": item.name,
+              },
             })),
           })}
         </script>
@@ -77,10 +79,13 @@ const SEO = ({
           {JSON.stringify({
             "@context": "https://schema.org",
             "@type": "FAQPage",
-            mainEntity: faq.map(f => ({
+            "mainEntity": faq.map((f) => ({
               "@type": "Question",
-              name: f.question,
-              acceptedAnswer: { "@type": "Answer", text: f.answer },
+              "name": f.question,
+              "acceptedAnswer": {
+                "@type": "Answer",
+                "text": f.answer,
+              },
             })),
           })}
         </script>
