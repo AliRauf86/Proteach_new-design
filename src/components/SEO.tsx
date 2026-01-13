@@ -35,25 +35,25 @@ const SEO = ({
     <Helmet>
       {/* Title & Meta */}
       <title>{title}</title>
-      <meta name="description" content={description} />
-      {keywords && <meta name="keywords" content={keywords} />}
+      <meta name="description" content={description} key="description" />
+      {keywords && <meta name="keywords" content={keywords} key="keywords" />}
 
       {/* Canonical */}
-      <link rel="canonical" href={url} />
+      <link rel="canonical" href={url} key="canonical" />
 
       {/* Open Graph */}
-      <meta property="og:title" content={title} />
-      <meta property="og:description" content={description} />
-      <meta property="og:type" content="website" />
-      <meta property="og:url" content={url} />
-      <meta property="og:image" content={ogImage} />
+      <meta property="og:title" content={title} key="og-title" />
+  <meta property="og:description" content={description} key="og-description" />
+  <meta property="og:type" content="website" key="og-type" />
+  <meta property="og:url" content={url} key="og-url" />
+  <meta property="og:image" content={ogImage} key="og-image" />
 
       {/* Twitter */}
-      <meta name="twitter:card" content="summary_large_image" />
-      <meta name="twitter:site" content="@ProteachAz" />
-      <meta name="twitter:title" content={title} />
-      <meta name="twitter:description" content={description} />
-      <meta name="twitter:image" content={ogImage} />
+      <meta name="twitter:card" content="summary_large_image" key="twitter-card" />
+      <meta name="twitter:site" content="@ProteachAz" key="twitter-site" />
+      <meta name="twitter:title" content={title} key="twitter-title" />
+      <meta name="twitter:description" content={description} key="twitter-description" />
+      <meta name="twitter:image" content={ogImage} key="twitter-image" />
 
       {/* Breadcrumb structured data - Düzəliş edilmiş hissə */}
       {breadcrumb && (
