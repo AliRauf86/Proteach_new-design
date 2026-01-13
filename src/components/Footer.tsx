@@ -25,7 +25,7 @@ const Footer = () => {
             </p>
             <div className="flex gap-4 pt-4">
               <a
-                href="https://www.facebook.com/Proteach.az/"
+                href="https://www.facebook.com/proteach.az/"
                 target="_blank"
     rel="noopener noreferrer"
     aria-label="ProTeach Facebook"
