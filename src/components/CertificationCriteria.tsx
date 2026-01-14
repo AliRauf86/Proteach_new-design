@@ -117,16 +117,43 @@ const CertificationCriteria = () => {
                 </TableRow>
               </TableHeader>
               <TableBody>
-                {criteriaData.map((row, index) => (
-                  <TableRow key={index} className="border-muted hover:bg-muted/50 transition-colors">
-                    <TableCell className="font-medium text-navy">{row.exam}</TableCell>
-                    <TableCell className="text-accent font-medium">{row.designation}</TableCell>
-                    <TableCell className="text-navy/80">{row.professionalExp}</TableCell>
-                    <TableCell className="text-navy/80">{row.auditExp}</TableCell>
-                    <TableCell className="text-navy/80">{row.projectExp}</TableCell>
-                  </TableRow>
-                ))}
-              </TableBody>
+  {criteriaData.map((row, index) => {
+    const rowSpan = getRowSpan(criteriaData, index);
+
+    return (
+      <TableRow
+        key={index}
+        className="border-muted hover:bg-muted/50 transition-colors"
+      >
+        {/* Exam sütunu – YALNIZ bir dəfə göstərilir */}
+        {rowSpan > 0 && (
+          <TableCell
+            rowSpan={rowSpan}
+            className="font-semibold text-navy align-top bg-muted/30"
+          >
+            {row.exam}
+          </TableCell>
+        )}
+
+        <TableCell className="text-accent font-medium">
+          {row.designation}
+        </TableCell>
+
+        <TableCell className="text-navy/80">
+          {row.professionalExp}
+        </TableCell>
+
+        <TableCell className="text-navy/80">
+          {row.auditExp}
+        </TableCell>
+
+        <TableCell className="text-navy/80">
+          {row.projectExp}
+        </TableCell>
+      </TableRow>
+    );
+  })}
+</TableBody>
             </Table>
           </div>
           <p className="text-sm text-muted-foreground mt-6 italic">
