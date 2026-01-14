@@ -97,14 +97,14 @@ const TrainingPortfolio = () => {
     </div>
 
     <h3 className="text-2xl font-bold mb-4 text-white">
-      Bütün Təlim Kurslarının kataloqu
+      {t("Bütün Təlim Kurslarının kataloqu", "Complete Training Courses Catalog")}
     </h3>
 
     <Button
       className="bg-accent hover:bg-accent/90"
       onClick={() => window.open("/training-catalog.pdf", "_blank")}
     >
-      PDF yüklə
+      {t("PDF yüklə", "Download PDF")}
     </Button>
   </div>
 
