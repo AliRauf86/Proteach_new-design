@@ -179,7 +179,7 @@ const Header = () => {
 
         {/* Mobile Menu */}
         {isMobileMenuOpen && (
-          <nav className={`lg:hidden mt-4 pb-4 space-y-1 animate-fade-in ${
+          <div role="presentation" className={`lg:hidden mt-4 pb-4 space-y-1 animate-fade-in ${
     isScrolled ? "bg-white/95 backdrop-blur-md shadow-lg"
       : "bg-navy"
   }`}>
@@ -295,7 +295,7 @@ const Header = () => {
               {t("Qeydiyyat", "Register")}
               </Link>
             </Button>
-          </nav>
+          </div>
         )}
       </div>
     </header>
