@@ -119,7 +119,24 @@ const CertificationCriteria = () => {
               <TableBody>
   {criteriaData.map((row, index) => {
     const rowSpan = getRowSpan(criteriaData, index);
+const getRowSpan = (
+  data: typeof criteriaData,
+  index: number
+): number => {
+  const currentExam = data[index].exam;
 
+  if (index > 0 && data[index - 1].exam === currentExam) {
+    return 0;
+  }
+
+  let span = 1;
+  for (let i = index + 1; i < data.length; i++) {
+    if (data[i].exam === currentExam) span++;
+    else break;
+  }
+
+  return span;
+};
     return (
       <TableRow
         key={index}
