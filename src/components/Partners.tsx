@@ -43,8 +43,8 @@ const Partners = () => {
                 <div className="space-y-4 text-navy/80">
                   <p>
                     {t(
-                      "PECB yaxın zamanda Proteach ilə tərəfdaşlıq müqaviləsi imzaladı. Bu tərəfdaşlıq Azərbaycanda ISO standartları üzrə təlim kursları və sertifikasiya təqdim etməklə rəqabətli qiymətlərlə əhəmiyyətli üstünlüklər təmin edəcək.",
-                      "PECB has recently signed a partnership agreement with Proteach. This partnership will deliver significant benefits at competitive prices, by providing training courses and certification of ISO standards in Azerbaijan."
+                      "ProTeach artıq PECB ilə rəsmi tərəfdaşdır. Bu tərəfdaşlıq Azərbaycanda ISO standartları üzrə təlim kursları və sertifikasiya təqdim etməklə rəqabətli qiymətlərlə əhəmiyyətli üstünlüklər təmin edəcəkdir.",
+                      "ProTeach is now an official partner with PECB. This partnership will deliver significant benefits at competitive prices, by providing training courses and certification of ISO standards in Azerbaijan."
                     )}
                   </p>
                   
