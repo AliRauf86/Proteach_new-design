@@ -142,27 +142,27 @@ const getRowSpan = (
     return (
       <TableRow
         key={index}
-        className="border-muted hover:bg-muted/50 transition-colors"
+        className="border-b border-muted hover:bg-muted/50 transition-colors"
       >
-        {/* Exam sütunu – YALNIZ bir dəfə göstərilir */}
+        {/* Exam sütunu – yalnız bir dəfə göstərilir */}
         {rowSpan > 0 && (
           <TableCell
             rowSpan={rowSpan}
-            className="font-semibold text-navy align-top bg-muted/30"
+            className="font-semibold text-navy align-top border-r border-muted"
           >
             {row.exam}
           </TableCell>
         )}
 
-        <TableCell className="text-accent font-medium">
+        <TableCell className="text-accent font-medium border-r border-muted">
           {row.designation}
         </TableCell>
 
-        <TableCell className="text-navy/80">
+        <TableCell className="text-navy/80 border-r border-muted">
           {row.professionalExp}
         </TableCell>
 
-        <TableCell className="text-navy/80">
+        <TableCell className="text-navy/80 border-r border-muted">
           {row.auditExp}
         </TableCell>
 
