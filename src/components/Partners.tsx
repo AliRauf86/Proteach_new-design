@@ -15,7 +15,7 @@ const Partners = () => {
           <h2 className="text-4xl lg:text-5xl font-bold mb-4 text-navy">
             {t("Bizim", "Our")} <span className="gradient-text">{t("Tərəfdaşlarımız", "Partners")}</span>
           </h2>
-          <p className="text-muted-foreground max-w-2xl mx-auto">
+          <p className="text-white max-w-2xl mx-auto text-lg leading-relaxed">
             {t(
               "Beynəlxalq standartlar üzrə təlim və sertifikasiya sahəsində etibarlı tərəfdaşlarımız",
               "Our trusted partners in training and certification for international standards"
