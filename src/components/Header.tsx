@@ -89,29 +89,30 @@ const Header = () => {
                 <ChevronDown className={`w-4 h-4 transition-transform ${isTrainingDropdownOpen ? "rotate-180" : ""}`} />
               </button>
               
-              {isTrainingDropdownOpen && (
-                <div className="absolute top-full left-0 mt-2 w-64 bg-background border border-border rounded-lg shadow-lg py-2 z-50">
-                  <Link
-                    to="/training"
-                    className="block px-4 py-2 text-sm text-foreground hover:bg-accent/10 hover:text-accent transition-colors"
-                    onClick={() => setIsTrainingDropdownOpen(false)}
-                  >
-                    {t("Bütün Təlimlər", "All Training")}
-                  </Link>
-                  <div className="border-t border-border my-1" />
-                  {trainingSubItems.map((item) => (
-                    <Link
-                      key={item.href}
-                      to={item.href}
-                      className="block px-4 py-2 text-sm text-foreground hover:bg-accent/10 hover:text-accent transition-colors"
-                      onClick={() => setIsTrainingDropdownOpen(false)}
-                    >
-                      {t(item.labelAz, item.labelEn)}
-                    </Link>
-                  ))}
-                </div>
-              )}
-            </div>
+              <div className={`absolute top-full left-0 mt-2 w-64 bg-background border border-border rounded-lg shadow-lg py-2 z-50 transition-all duration-200 ${
+  isTrainingDropdownOpen 
+    ? "opacity-100 visible translate-y-0" 
+    : "opacity-0 invisible translate-y-2 pointer-events-none"
+}`}>
+  <Link
+    to="/training"
+    className="block px-4 py-2 text-sm text-foreground hover:bg-accent/10 hover:text-accent transition-colors"
+    onClick={() => setIsTrainingDropdownOpen(false)}
+  >
+    {t("Bütün Təlimlər", "All Training")}
+  </Link>
+  <div className="border-t border-border my-1" />
+  {trainingSubItems.map((item) => (
+    <Link
+      key={item.href}
+      to={item.href}
+      className="block px-4 py-2 text-sm text-foreground hover:bg-accent/10 hover:text-accent transition-colors"
+      onClick={() => setIsTrainingDropdownOpen(false)}
+    >
+      {t(item.labelAz, item.labelEn)}
+    </Link>
+  ))}
+</div>
 
             {/* About Dropdown */}
             <div className="relative" ref={aboutDropdownRef}>
