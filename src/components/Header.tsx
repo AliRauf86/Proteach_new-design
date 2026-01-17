@@ -181,7 +181,7 @@ const Header = () => {
 >
   {isMobileMenuOpen ? <X size={24} /> : <Menu size={24} />}
 </button>
-
+</div>
         {/* Mobile Menu */}
         {isMobileMenuOpen && (
           <div role="presentation" className={`lg:hidden mt-4 pb-4 space-y-1 animate-fade-in ${
