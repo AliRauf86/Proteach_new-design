@@ -71,7 +71,7 @@ const Header = () => {
           </Link>
 
           {/* Desktop Menu */}
-          <nav className="hidden lg:flex items-center space-x-8">
+          <nav aria-label="Main Navigation" className="hidden lg:flex items-center space-x-8">
             <Link
               to="/"
               className={`text-sm font-medium transition-colors ${isScrolled ? "text-foreground hover:text-accent" : "text-white hover:text-accent"}`}
@@ -174,12 +174,13 @@ const Header = () => {
 
           {/* Mobile Menu Button */}
           <button
-            className={`lg:hidden ${isScrolled ? "text-foreground" : "text-white"}`}
-            onClick={() => setIsMobileMenuOpen(!isMobileMenuOpen)}
-          >
-            {isMobileMenuOpen ? <X size={24} /> : <Menu size={24} />}
-          </button>
-        </div>
+  className={`lg:hidden ${isScrolled ? "text-foreground" : "text-white"}`}
+  onClick={() => setIsMobileMenuOpen(!isMobileMenuOpen)}
+  aria-expanded={isMobileMenuOpen}
+  aria-label="Toggle Menu"
+>
+  {isMobileMenuOpen ? <X size={24} /> : <Menu size={24} />}
+</button>
 
         {/* Mobile Menu */}
         {isMobileMenuOpen && (
