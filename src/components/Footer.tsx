@@ -8,7 +8,7 @@ const Footer = () => {
   const { t } = useLanguage();
   
   return (
-    <footer className="bg-navy text-white relative overflow-hidden">
+    <footer data-nosnippet className="bg-navy text-white relative overflow-hidden">
       {/* Decorative top border */}
       <div className="h-1 bg-gradient-to-r from-transparent via-accent to-transparent" />
 
