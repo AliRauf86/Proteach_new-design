@@ -90,29 +90,30 @@ const Header = () => {
               </button>
               
               <div className={`absolute top-full left-0 mt-2 w-64 bg-background border border-border rounded-lg shadow-lg py-2 z-50 transition-all duration-200 ${
-  isTrainingDropdownOpen 
-    ? "opacity-100 visible translate-y-0" 
-    : "opacity-0 invisible translate-y-2 pointer-events-none"
-}`}>
-  <Link
-    to="/training"
-    className="block px-4 py-2 text-sm text-foreground hover:bg-accent/10 hover:text-accent transition-colors"
-    onClick={() => setIsTrainingDropdownOpen(false)}
-  >
-    {t("Bütün Təlimlər", "All Training")}
-  </Link>
-  <div className="border-t border-border my-1" />
-  {trainingSubItems.map((item) => (
-    <Link
-      key={item.href}
-      to={item.href}
-      className="block px-4 py-2 text-sm text-foreground hover:bg-accent/10 hover:text-accent transition-colors"
-      onClick={() => setIsTrainingDropdownOpen(false)}
-    >
-      {t(item.labelAz, item.labelEn)}
-    </Link>
-  ))}
-</div>
+                isTrainingDropdownOpen 
+                  ? "opacity-100 visible translate-y-0" 
+                  : "opacity-0 invisible translate-y-2 pointer-events-none"
+              }`}>
+                <Link
+                  to="/training"
+                  className="block px-4 py-2 text-sm text-foreground hover:bg-accent/10 hover:text-accent transition-colors"
+                  onClick={() => setIsTrainingDropdownOpen(false)}
+                >
+                  {t("Bütün Təlimlər", "All Training")}
+                </Link>
+                <div className="border-t border-border my-1" />
+                {trainingSubItems.map((item) => (
+                  <Link
+                    key={item.href}
+                    to={item.href}
+                    className="block px-4 py-2 text-sm text-foreground hover:bg-accent/10 hover:text-accent transition-colors"
+                    onClick={() => setIsTrainingDropdownOpen(false)}
+                  >
+                    {t(item.labelAz, item.labelEn)}
+                  </Link>
+                ))}
+              </div>
+            </div> {/* Training Dropdown Closing Div - Bu əskik idi */}
 
             {/* About Dropdown */}
             <div className="relative" ref={aboutDropdownRef}>
@@ -124,20 +125,22 @@ const Header = () => {
                 <ChevronDown className={`w-4 h-4 transition-transform ${isAboutDropdownOpen ? "rotate-180" : ""}`} />
               </button>
               
-              {isAboutDropdownOpen && (
-                <div className="absolute top-full left-0 mt-2 w-48 bg-background border border-border rounded-lg shadow-lg py-2 z-50">
-                  {aboutSubItems.map((item) => (
-                    <Link
-                      key={item.href}
-                      to={item.href}
-                      className="block px-4 py-2 text-sm text-foreground hover:bg-accent/10 hover:text-accent transition-colors"
-                      onClick={() => setIsAboutDropdownOpen(false)}
-                    >
-                      {t(item.labelAz, item.labelEn)}
-                    </Link>
-                  ))}
-                </div>
-              )}
+              <div className={`absolute top-full left-0 mt-2 w-48 bg-background border border-border rounded-lg shadow-lg py-2 z-50 transition-all duration-200 ${
+                isAboutDropdownOpen 
+                  ? "opacity-100 visible translate-y-0" 
+                  : "opacity-0 invisible translate-y-2 pointer-events-none"
+              }`}>
+                {aboutSubItems.map((item) => (
+                  <Link
+                    key={item.href}
+                    to={item.href}
+                    className="block px-4 py-2 text-sm text-foreground hover:bg-accent/10 hover:text-accent transition-colors"
+                    onClick={() => setIsAboutDropdownOpen(false)}
+                  >
+                    {t(item.labelAz, item.labelEn)}
+                  </Link>
+                ))}
+              </div>
             </div>
 
             {menuItems.slice(1).map((item) => (
@@ -181,14 +184,13 @@ const Header = () => {
         {/* Mobile Menu */}
         {isMobileMenuOpen && (
           <div role="presentation" className={`lg:hidden mt-4 pb-4 space-y-1 animate-fade-in ${
-    isScrolled ? "bg-white/95 backdrop-blur-md shadow-lg"
-      : "bg-navy"
-  }`}>
+            isScrolled ? "bg-white/95 backdrop-blur-md shadow-lg" : "bg-navy"
+          }`}>
             <Link
               to="/"
               className={`block text-sm font-medium hover:text-accent transition-colors py-2 ${
-    isScrolled ? "text-navy" : "text-white"
-  }`}
+                isScrolled ? "text-navy" : "text-white"
+              }`}
               onClick={() => setIsMobileMenuOpen(false)}
             >
               {t("Ana Səhifə", "Home")}
@@ -199,8 +201,8 @@ const Header = () => {
               <button
                 onClick={() => setIsMobileTrainingOpen(!isMobileTrainingOpen)}
                 className={`flex items-center justify-between w-full text-sm font-medium hover:text-accent transition-colors py-2 ${
-    isScrolled ? "text-navy" : "text-white"
-  }`}
+                  isScrolled ? "text-navy" : "text-white"
+                }`}
               >
                 {t("Təlimlər", "Training")}
                 <ChevronDown className={`w-4 h-4 transition-transform ${isMobileTrainingOpen ? "rotate-180" : ""}`} />
@@ -211,8 +213,8 @@ const Header = () => {
                   <Link
                     to="/training"
                     className={`block text-sm font-medium hover:text-accent transition-colors py-2 ${
-    isScrolled ? "text-navy" : "text-white"
-  }`}
+                      isScrolled ? "text-navy" : "text-white"
+                    }`}
                     onClick={() => setIsMobileMenuOpen(false)}
                   >
                     {t("Bütün Təlimlər", "All Training")}
@@ -222,8 +224,8 @@ const Header = () => {
                       key={item.href}
                       to={item.href}
                       className={`block text-sm font-medium hover:text-accent transition-colors py-2 ${
-    isScrolled ? "text-navy" : "text-white"
-  }`}
+                        isScrolled ? "text-navy" : "text-white"
+                      }`}
                       onClick={() => setIsMobileMenuOpen(false)}
                     >
                       {t(item.labelAz, item.labelEn)}
@@ -238,8 +240,8 @@ const Header = () => {
               <button
                 onClick={() => setIsMobileAboutOpen(!isMobileAboutOpen)}
                 className={`flex items-center justify-between w-full text-sm font-medium hover:text-accent transition-colors py-2 ${
-    isScrolled ? "text-navy" : "text-white"
-  }`}
+                  isScrolled ? "text-navy" : "text-white"
+                }`}
               >
                 {t("Haqqımızda", "About")}
                 <ChevronDown className={`w-4 h-4 transition-transform ${isMobileAboutOpen ? "rotate-180" : ""}`} />
@@ -251,9 +253,9 @@ const Header = () => {
                     <Link
                       key={item.href}
                       to={item.href}
-                      className={`flex items-center justify-between w-full text-sm font-medium hover:text-accent transition-colors py-2 ${
-    isScrolled ? "text-navy" : "text-white"
-  }`}
+                      className={`block text-sm font-medium hover:text-accent transition-colors py-2 ${
+                        isScrolled ? "text-navy" : "text-white"
+                      }`}
                       onClick={() => setIsMobileMenuOpen(false)}
                     >
                       {t(item.labelAz, item.labelEn)}
@@ -268,8 +270,8 @@ const Header = () => {
                 key={item.href}
                 to={item.href}
                 className={`block text-sm font-medium hover:text-accent transition-colors py-2 ${
-    isScrolled ? "text-navy" : "text-white"
-  }`}
+                  isScrolled ? "text-navy" : "text-white"
+                }`}
                 onClick={() => setIsMobileMenuOpen(false)}
               >
                 {t(item.labelAz, item.labelEn)}
@@ -279,8 +281,8 @@ const Header = () => {
             <button
               onClick={() => setLanguage(language === "az" ? "en" : "az")}
               className={`flex items-center gap-2 px-3 py-2 rounded-lg glass hover:bg-accent/10 transition-colors w-full ${
-    isScrolled ? "text-navy" : "text-white"
-  }`}
+                isScrolled ? "text-navy" : "text-white"
+              }`}
             >
               <Languages className="w-4 h-4" />
               <span className="text-sm font-medium">{language === "az" ? "EN" : "AZ"}</span>
@@ -290,10 +292,10 @@ const Header = () => {
               variant="default" className="w-full bg-accent hover:bg-accent/90 mt-4"
               >
               <Link
-    to="/contact"
-    onClick={() => setIsMobileMenuOpen(false)}
-  >
-              {t("Qeydiyyat", "Register")}
+                to="/contact"
+                onClick={() => setIsMobileMenuOpen(false)}
+              >
+                {t("Qeydiyyat", "Register")}
               </Link>
             </Button>
           </div>
