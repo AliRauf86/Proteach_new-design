@@ -73,7 +73,8 @@ const Hero = () => {
           <div className="text-white space-y-8 animate-fade-in-up">
             <div className="space-y-4">
 
-              <h1 className="sr-only">ISO sertifikasiya, peşəkar təlimlər və IT konsultasiya xidmətləri</h1>
+              <h1 className="sr-only">ISO sertifikasiya, peşəkar təlimlər və IT konsultasiya xidmətləri. 
+                Beynəlxalq tanınan PECB sertifikatları, kibertəhlükəsizlik və rəqəmsal transformasiya ...</h1>
               
               <div className="text-5xl lg:text-7xl font-bold leading-tight">
                 <span className="gradient-text">{t(slides[currentSlide].titleAz, slides[currentSlide].titleEn).split(" ")[0]}</span>
