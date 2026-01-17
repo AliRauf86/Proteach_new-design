@@ -72,11 +72,14 @@ const Hero = () => {
           {/* Content */}
           <div className="text-white space-y-8 animate-fade-in-up">
             <div className="space-y-4">
-              <h1 className="text-5xl lg:text-7xl font-bold leading-tight">
+
+              <h1 className="sr-only">ISO sertifikasiya, peşəkar təlimlər və IT konsultasiya xidmətləri</h1>
+              
+              <div className="text-5xl lg:text-7xl font-bold leading-tight">
                 <span className="gradient-text">{t(slides[currentSlide].titleAz, slides[currentSlide].titleEn).split(" ")[0]}</span>
                 <br />
                 <span className="text-white">{t(slides[currentSlide].titleAz, slides[currentSlide].titleEn).split(" ").slice(1).join(" ")}</span>
-              </h1>
+              </div>
               <p className="text-2xl lg:text-3xl text-accent font-semibold">
                 {t(slides[currentSlide].subtitleAz, slides[currentSlide].subtitleEn)}
               </p>
