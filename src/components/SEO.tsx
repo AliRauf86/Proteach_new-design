@@ -90,6 +90,30 @@ const SEO = ({
           })}
         </script>
       )}
+
+      {/* Organization structured data */}
+<script type="application/ld+json">
+  {JSON.stringify({
+    "@context": "https://schema.org",
+    "@type": "Organization",
+    "name": "ProTeach",
+    "url": "https://proteach.az/",
+    "logo": "https://proteach.az/logo.png",
+    "contactPoint": {
+      "@type": "ContactPoint",
+      "telephone": "+994 55 287 78 84",
+      "contactType": "customer service",
+      "areaServed": "AZ",
+      "availableLanguage": ["Azerbaijani", "English"]
+    },
+    "sameAs": [
+      "https://www.facebook.com/proteach.az",
+      "https://www.instagram.com/proteach.az",
+      "https://www.linkedin.com/company/proteach-az"
+    ]
+  })}
+</script>
+      
     </Helmet>
   );
 };
