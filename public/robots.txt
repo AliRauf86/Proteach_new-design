@@ -13,4 +13,4 @@ Allow: /
 User-agent: *
 Allow: /
 
-Sitemap: https://proteach.az/pt-atlas-2026.xml
+Sitemap: https://proteach.az/sitemap.xml.xml
