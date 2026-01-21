@@ -10,7 +10,7 @@ const ConsultationPage = () => {
   return (
     <>
       <SEO
-        title={t("IT Konsultasiya | ProTeach", "IT Consultation | ProTeach")}
+        title={t("Konsultasiya | ProTeach", "Consultation | ProTeach")}
         description={t(
           "Peşəkar IT konsultasiya xidmətləri: məlumat təhlükəsizliyi, risk idarəetməsi, texnoloji strategiya və audit. Biznesinizi rəqəmsal çevrilməyə hazırlayın.",
           "Professional IT consulting services: information security, risk management, technology strategy and audit. Prepare your business for digital transformation."
