@@ -62,13 +62,11 @@ const SEO = ({
             "@context": "https://schema.org",
             "@type": "BreadcrumbList",
             "itemListElement": breadcrumb.map((item) => ({
-              "@type": "ListItem",
-              "position": item.position,
-              "item": {
-                "@id": item.item, // Google-un 'Unnamed item' xətasını həll edir
-                "name": item.name,
-              },
-            })),
+  "@type": "ListItem",
+  "position": item.position,
+  "name": item.name,   
+  "item": item.item    
+})),
           })}
         </script>
       )}
