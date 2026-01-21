@@ -120,6 +120,8 @@ const SEO = ({
     ]
   })}
 </script>
+     </>
+      )} 
       
     </Helmet>
   );
