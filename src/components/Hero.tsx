@@ -139,8 +139,8 @@ const Hero = () => {
                 <img
                   src={slides[currentSlide].image}
                   alt={t(
-    "ProTeach peşəkar təlim və sertifikasiya xidmətləri",
-    "ProTeach professional training and certification services"
+    "ProTeach peşəkar təlim və sertifikasiya mərkəzi",
+    "ProTeach professional training and certification center"
   )}
                   className="w-full h-[600px] object-cover object-top"
                 />
