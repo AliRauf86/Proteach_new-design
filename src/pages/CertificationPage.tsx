@@ -33,7 +33,7 @@ const CertificationPage = () => {
     },
     {
       position: 2,
-      name: t("Sertifikasiya", "Certification"),
+      name: t("Sertifikasiya Proqramları", "Certification Programs"),
       item: "https://proteach.az/certification",
     },
         ]}
