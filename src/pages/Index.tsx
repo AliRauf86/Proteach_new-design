@@ -30,14 +30,8 @@ const Index = () => {
           "ISO 27001, ISO 20000, ISO 9001, certification, professional training, cybersecurity, PECB, IT training, Azerbaijan"
         )}
         url="https://proteach.az" 
-  breadcrumb={[
-    {
-      position: 1,
-      name: t("Ana Səhifə", "Home"), 
-      item: "https://proteach.az/",
-    },
-        ]}
-      />
+        isHomePage={true}
+        />
       <div className="min-h-screen">
         <Header />
       <main>
