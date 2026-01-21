@@ -55,21 +55,20 @@ const SEO = ({
       <meta name="twitter:description" content={description} key="twitter-description" />
       <meta name="twitter:image" content={ogImage} key="twitter-image" />
 
-      {/* Breadcrumb structured data - Düzəliş edilmiş hissə */}
       {breadcrumb && (
-        <script type="application/ld+json">
-          {JSON.stringify({
-            "@context": "https://schema.org",
-            "@type": "BreadcrumbList",
-            "itemListElement": breadcrumb.map((item) => ({
-  "@type": "ListItem",
-  "position": item.position,
-  "name": item.name,   
-  "item": item.item    
-})),
-          })}
-        </script>
-      )}
+  <script type="application/ld+json">
+    {JSON.stringify({
+      "@context": "https://schema.org",
+      "@type": "BreadcrumbList",
+      "itemListElement": breadcrumb.map((item) => ({
+        "@type": "ListItem",
+        "position": Number(item.position),
+        "name": String(item.name).trim(),
+        "item": String(item.item).trim()
+      })),
+    })}
+  </script>
+)}
 
       {/* FAQ structured data */}
       {faq && faq.length > 0 && (
