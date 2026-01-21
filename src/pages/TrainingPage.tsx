@@ -32,7 +32,7 @@ const TrainingPage = () => {
     },
     { 
       position: 2, 
-      name: t("Təlimlər", "Training"), 
+      name: t("Təlim Proqramları", "Training Programs"), 
       item: "https://proteach.az/training" 
     }
         ]}
