@@ -94,6 +94,7 @@ const Hero = () => {
             </div>
 
             <Button
+              asChild
               size="lg"
               className="bg-accent hover:bg-accent/90 text-white font-semibold text-lg px-8 py-6 rounded-full hover-glow"
               >
