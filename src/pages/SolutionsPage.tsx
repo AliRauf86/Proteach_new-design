@@ -28,7 +28,7 @@ const SolutionsPage = () => {
     },
     { 
       position: 2, 
-      name: t("Həllər", "Solutions"), 
+      name: t("Rəqəmsal Transformasiya Həlləri", "Digital Transformation Solutions"), 
       item: "https://proteach.az/solutions" 
     },
         ]}
