@@ -54,7 +54,7 @@ const Hero = () => {
     <section className="relative min-h-screen pt-28 lg:pt-32 flex items-start lg:items-center overflow-hidden bg-navy">
       {/* Background with overlay */}
       <div className="absolute inset-0 z-0">
-        <img src={heroBg} alt="Hero Background" className="w-full h-full object-cover" />
+        <img src={heroBg} alt="" className="w-full h-full object-cover" />
         <div className="absolute inset-0 bg-gradient-to-r from-navy-dark/95 via-navy/90 to-navy/80" />
         {/* Animated flowing lines */}
         <div className="absolute inset-0">
