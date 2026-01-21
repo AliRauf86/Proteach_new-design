@@ -138,7 +138,10 @@ const Hero = () => {
               <div className="relative rounded-3xl overflow-hidden border-4 border-accent/50">
                 <img
                   src={slides[currentSlide].image}
-                  alt="Professional Consultant"
+                  alt={t(
+    "ProTeach peşəkar təlim və sertifikasiya xidmətləri",
+    "ProTeach professional training and certification services"
+  )}
                   className="w-full h-[600px] object-cover object-top"
                 />
               </div>
