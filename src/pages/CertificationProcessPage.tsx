@@ -15,8 +15,8 @@ const CertificationProcessPage = () => {
           "Training & Certification Process | ProTeach"
         )}
         description={t(
-          "PROTEACH təlim və sertifikatlaşdırma prosesi - qeydiyyatdan sertifikat almağa qədər bütün mərhələlər.",
-          "PROTEACH training and certification process - all stages from registration to certificate acquisition."
+          "ProTeach təlim və sertifikatlaşdırma prosesi - qeydiyyatdan sertifikat almağa qədər bütün mərhələlər.",
+          "ProTeach training and certification process - all stages from registration to certificate acquisition."
         )}
         keywords={t(
           "təlim prosesi, sertifikatlaşdırma prosesi, PECB, ProTeach təlim, qeydiyyat və sertifikat",
@@ -36,7 +36,7 @@ const CertificationProcessPage = () => {
     },
     {
       position: 3,
-      name: t("Sertifikatlaşdırma Prosesi", "Certification Process"), 
+      name: t("Təlim və Sertifikatlaşdırma Prosesi", "Training & Certification Process"), 
       item: "https://proteach.az/training/process",
     },
         ]}
