@@ -20,6 +20,7 @@ interface SEOProps {
   ogImage?: string;
   breadcrumb?: BreadcrumbItem[];
   faq?: FAQItem[];
+  isHomePage?: boolean;
 }
 
 const SEO = ({
@@ -30,6 +31,7 @@ const SEO = ({
   ogImage = "https://proteach.az/logo.png",
   breadcrumb,
   faq,
+  isHomePage = false,
 }: SEOProps) => {
   return (
     <Helmet>
@@ -55,7 +57,7 @@ const SEO = ({
       <meta name="twitter:description" content={description} key="twitter-description" />
       <meta name="twitter:image" content={ogImage} key="twitter-image" />
 
-      {breadcrumb && (
+      {breadcrumb && breadcrumb.length > 1 && (
   <script type="application/ld+json">
     {JSON.stringify({
       "@context": "https://schema.org",
@@ -89,13 +91,21 @@ const SEO = ({
       )}
 
       {/* Organization structured data */}
+      {isHomePage && ( 
+        <>
 <script type="application/ld+json">
   {JSON.stringify({
     "@context": "https://schema.org",
-    "@type": "Organization",
+    "@type": "EducationalOrganization",
     "name": "ProTeach",
+    "alternateName": "ProTeach Azerbaijan",
     "url": "https://proteach.az/",
     "logo": "https://proteach.az/logo.png",
+    "description": "Peşəkar Tədris və Sertifikasiya Mərkəzi", 
+              "address": { 
+                "@type": "PostalAddress",
+                "addressCountry": "AZ"
+              },
     "contactPoint": {
       "@type": "ContactPoint",
       "telephone": "+994 55 287 78 84",
