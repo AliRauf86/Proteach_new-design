@@ -62,6 +62,7 @@ const SEO = ({
     {JSON.stringify({
       "@context": "https://schema.org",
       "@type": "BreadcrumbList",
+      "name": "Breadcrumb Navigation",
       "itemListElement": breadcrumb.map((item) => ({
         "@type": "ListItem",
         "position": Number(item.position),
