@@ -74,7 +74,19 @@ export default {
       '/about/partners': {
         title: 'Tərəfdaşlar | ProTeach',
         description: 'ProTeach-in beynəlxalq tərəfdaşları və akkreditasiyaları.'
-      }
+      },
+      '/faq': {
+    title: 'Tez-tez Verilən Suallar | ProTeach',
+    description: 'ProTeach haqqında ən çox soruşulan suallar və cavablar. Təlim, sertifikasiya və konsultasiya xidmətləri ilə bağlı məlumatlar.'
+  },
+  '/training/criteria': {
+    title: 'Sertifikatlaşdırma Meyarları | ProTeach',
+    description: 'Sertifikat əldə etmək üçün tələblər və meyarlar. PECB sertifikasiya standartları.'
+  },
+  '/training/delivery': {
+    title: 'Çatdırılma Metodları | ProTeach',
+    description: 'Əyani, online və self-study formatlarında təlim imkanları. Sizə uyğun öyrənmə metodunu seçin.'
+  }
     };
     
     const routeData = routes[url.pathname] || routes['/'];
