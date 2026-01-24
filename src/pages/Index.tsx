@@ -26,8 +26,8 @@ const Index = () => {
           "ISO certification, professional training and IT consulting services. Internationally recognized PECB certificates, cybersecurity and digital transformation solutions."
         )}
         keywords={t(
-          "ISO 27001, ISO 20000, ISO 9001, sertifikasiya, peşəkar təlim, kibertəhlükəsizlik, PECB, IT təlimi, Azərbaycan",
-          "ISO 27001, ISO 20000, ISO 9001, certification, professional training, cybersecurity, PECB, IT training, Azerbaijan"
+          "ITIL, ISO 27001, ISO 20000, ISO 9001, sertifikasiya, peşəkar təlim, kibertəhlükəsizlik, PECB, IT təlimi, Azərbaycan",
+          "ITIL, ISO 27001, ISO 20000, ISO 9001, certification, professional training, cybersecurity, PECB, IT training, Azerbaijan"
         )}
         url="https://proteach.az" 
         isHomePage={true}
