@@ -29,7 +29,7 @@ const Index = () => {
           "ITIL, ISO 27001, ISO 20000, ISO 9001, sertifikasiya, peşəkar təlim, kibertəhlükəsizlik, PECB, IT təlimi, Azərbaycan",
           "ITIL, ISO 27001, ISO 20000, ISO 9001, certification, professional training, cybersecurity, PECB, IT training, Azerbaijan"
         )}
-        url="https://proteach.az" 
+        url="https://proteach.az/" 
         isHomePage={true}
         />
       <div className="min-h-screen">
