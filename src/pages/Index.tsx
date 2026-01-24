@@ -35,6 +35,9 @@ const Index = () => {
       <div className="min-h-screen">
         <Header />
       <main>
+        <h1 className="sr-only">
+    ProTeach | Peşəkar Tədris və Sertifikasiya Mərkəzi
+  </h1>
         <div id="hero"><Hero /></div>
         <Statistics />
         <div id="training"><Training /></div>
