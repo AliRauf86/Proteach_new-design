@@ -51,7 +51,6 @@ const Header = () => {
   ];
 
   const menuItems = [
-    { labelAz: "Ana Səhifə", labelEn: "Home", href: "/" },
     { labelAz: "Sertifikasiya", labelEn: "Certification", href: "/certification" },
     { labelAz: "Konsultasiya", labelEn: "Consultation", href: "/consultation" },
     { labelAz: "Həllər", labelEn: "Solutions", href: "/solutions" },
