@@ -40,12 +40,12 @@ const Index = () => {
   </h1>
         <div id="hero"><Hero /></div>
         <Statistics />
-        <div id="training"><Training /></div>
-        <div id="about"><About /></div>
-        <div id="certification"><Certification /></div>
-        <div id="Consultation"><Consultation /></div>
-        <div id="Solutions"><Solutions /></div>
-        <div id="FAQ"><FAQ /></div>
+        <div id="home-training"><Training /></div>
+<div id="home-about"><About /></div>
+<div id="home-certification"><Certification /></div>
+<div id="home-consultation"><Consultation /></div>
+<div id="home-solutions"><Solutions /></div>
+<div id="home-faq"><FAQ /></div>
       </main>
       <Footer />
     </div>
