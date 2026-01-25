@@ -49,7 +49,7 @@ const Certification = () => {
       <div className="container mx-auto px-4 relative z-10">
         <div className="text-center mb-16 animate-fade-in">
           <h1 className="text-4xl lg:text-5xl font-bold mb-4 text-white">
-            {t("Peşəkar", "Professional")}<span className="gradient-text">{t("Sertifikasiya", "Certification")}</span>
+            {t("Peşəkar", "Professional")} <span className="gradient-text">{t("Sertifikasiya", "Certification")}</span>
           </h1>
           <p className="text-lg text-gray-300 max-w-2xl mx-auto">
             {t(
