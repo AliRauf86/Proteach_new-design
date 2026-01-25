@@ -39,6 +39,7 @@ const Partners = () => {
                 <div className="inline-block px-4 py-1 bg-accent/10 text-accent rounded-full text-sm font-medium">
                   {t("24 Noyabr 2025", "November 24, 2025")}
                 </div>
+               
                 <a
     href="https://pecb.com/en/newsReleases/pecb-signs-a-partnership-agreement-with-proteach"
     target="_blank"
