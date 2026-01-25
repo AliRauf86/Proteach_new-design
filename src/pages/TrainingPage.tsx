@@ -41,9 +41,6 @@ const TrainingPage = () => {
       <div className="min-h-screen bg-navy">
         <Header />
         <main className="pt-24">
-          <h1 className="sr-only">
-    {t("Təlim Proqramları | ProTeach", "Training Programs | ProTeach")}
-  </h1>
           <Training />
           <TrainingPortfolio />
           <CourseLevels />
