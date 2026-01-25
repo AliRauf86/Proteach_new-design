@@ -51,9 +51,9 @@ const About = () => {
           {/* Content Section */}
           <div className="space-y-8 text-white animate-fade-in-up">
             <div>
-              <h2 className="text-4xl lg:text-5xl font-bold mb-4">
+              <h1 className="text-4xl lg:text-5xl font-bold mb-4">
                 {t("Haqqımızda", "About Us")} <span className="gradient-text"> </span>
-              </h2>
+              </h1>
               <p className="text-lg text-gray-300 leading-relaxed">
                 {t("ProTeach beynəlxalq səviyyədə tanınmış idarəetmə sistemləri, ITSM təcrübələri və təşkilati inkişaf həlləri üzrə ixtisaslaşmış peşəkar təlim və konsultasiya mərkəzidir.",
                 "ProTeach is a professional training and consulting center specializing in internationally recognized management systems, ITSM practices, and organizational development solutions.")}
