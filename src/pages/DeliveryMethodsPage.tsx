@@ -45,6 +45,9 @@ const DeliveryMethodsPage = () => {
       <div className="min-h-screen bg-navy">
         <Header />
         <main className="pt-24">
+          <h1 className="text-4xl font-bold mb-4">
+    {t("Çatdırılma Metodları", "Delivery Methods")}
+  </h1>
           <DeliveryMethods />
         </main>
         <Footer />
