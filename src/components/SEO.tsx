@@ -123,35 +123,6 @@ const SEO = ({
 </script>
      </>
       )} 
-
-     <script type="application/ld+json">
-{JSON.stringify({
-  "@context": "https://schema.org",
-  "@type": "Course",
-  "name": "ITIL Təlim Proqramı",
-  "description": "ITIL üzrə peşəkar təlim proqramı. Beynəlxalq standartlara uyğun kurs.",
-  "provider": {
-    "@type": "EducationalOrganization",
-    "name": "ProTeach",
-    "url": "https://proteach.az"
-  }
-})}
-</script>
-
-      <script type="application/ld+json">
-{JSON.stringify({
-  "@context": "https://schema.org",
-  "@type": "Course",
-  "name": "ISO 27001 Təlim Proqramı",
-  "description": "ISO 27001 üzrə peşəkar təlim proqramı. PECB akkreditə olunmuş kurs.",
-  "provider": {
-    "@type": "EducationalOrganization",
-    "name": "ProTeach",
-    "url": "https://proteach.az"
-  }
-})}
-</script>
-
       
     </Helmet>
   );
