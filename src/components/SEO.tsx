@@ -97,6 +97,7 @@ const SEO = ({
 <script type="application/ld+json">
   {JSON.stringify({
     "@context": "https://schema.org",
+    "@type": "WebSite",
     "@type": "EducationalOrganization",
     "name": "ProTeach",
     "alternateName": "ProTeach Azerbaijan",
