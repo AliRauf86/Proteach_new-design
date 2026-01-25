@@ -39,7 +39,7 @@ const Partners = () => {
                 <div className="inline-block px-4 py-1 bg-accent/10 text-accent rounded-full text-sm font-medium">
                   {t("24 Noyabr 2025", "November 24, 2025")}
                 </div>
-               <div> <a
+               <a
     href="https://pecb.com/en/newsReleases/pecb-signs-a-partnership-agreement-with-proteach"
     target="_blank"
     rel="noopener noreferrer"
@@ -47,7 +47,7 @@ const Partners = () => {
   >
     {t("PECB rəsmi press relizi", "Official PECB press release")}
     <span aria-hidden>↗</span>
-  </a> </div>
+  </a> 
                 <div className="space-y-4 text-navy/80">
                   <p>
                     {t(
