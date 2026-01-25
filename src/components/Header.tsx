@@ -142,7 +142,7 @@ const Header = () => {
               </div>
             </div>
 
-            {menuItems.slice(1).map((item) => (
+            {menuItems.map((item) => (
               <Link
                 key={item.href}
                 to={item.href}
@@ -265,7 +265,7 @@ const Header = () => {
               )}
             </div>
 
-            {menuItems.slice(1).map((item) => (
+            {menuItems.map((item) => (
               <Link
                 key={item.href}
                 to={item.href}
