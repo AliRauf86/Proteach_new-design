@@ -101,15 +101,7 @@ const SEO = ({
           "@type": "WebSite",
           "name": "ProTeach",
           "url": "https://proteach.az/",
-          "potentialAction": {
-            "@type": "SearchAction",
-            "target": {
-              "@type": "EntryPoint",
-              "urlTemplate": "https://proteach.az/training?q={search_term_string}"
-            },
-            "query-input": "required name=search_term_string"
-          }
-        },
+          },
         {
           "@type": "EducationalOrganization",
           "name": "ProTeach",
