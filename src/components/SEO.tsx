@@ -62,6 +62,7 @@ const SEO = ({
     {JSON.stringify({
       "@context": "https://schema.org",
       "@type": "BreadcrumbList",
+      "isPartOf": { "@id": "https://proteach.az/#website" },
       "name": "Breadcrumb Navigation",
       "itemListElement": breadcrumb.map((item) => ({
         "@type": "ListItem",
@@ -99,11 +100,14 @@ const SEO = ({
       "@graph": [
         {
           "@type": "WebSite",
+          "@id": "https://proteach.az/#website",
           "name": "ProTeach",
+          "publisher": { "@id": "https://proteach.az/#organization" },
           "url": "https://proteach.az/",
           },
         {
           "@type": "EducationalOrganization",
+          "@id": "https://proteach.az/#organization",
           "name": "ProTeach",
           "alternateName": "ProTeach Azerbaijan",
           "url": "https://proteach.az/",
