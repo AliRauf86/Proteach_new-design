@@ -92,38 +92,52 @@ const SEO = ({
       )}
 
       {/* Organization structured data */}
-      {isHomePage && ( 
-        <>
-<script type="application/ld+json">
-  {JSON.stringify({
-    "@context": "https://schema.org",
-    "@type": "WebSite",
-    "@type": "EducationalOrganization",
-    "name": "ProTeach",
-    "alternateName": "ProTeach Azerbaijan",
-    "url": "https://proteach.az/",
-    "logo": "https://proteach.az/logo.png",
-    "description": "Peşəkar Tədris və Sertifikasiya Mərkəzi", 
-              "address": { 
-                "@type": "PostalAddress",
-                "addressCountry": "AZ"
-              },
-    "contactPoint": {
-      "@type": "ContactPoint",
-      "telephone": "+994 55 287 78 84",
-      "contactType": "customer service",
-      "areaServed": "AZ",
-      "availableLanguage": ["Azerbaijani", "English"]
-    },
-    "sameAs": [
-      "https://www.facebook.com/proteach.az",
-      "https://www.instagram.com/proteach.az",
-      "https://www.linkedin.com/company/proteach-az"
-    ]
-  })}
-</script>
-     </>
-      )} 
+      {isHomePage && (
+  <script type="application/ld+json">
+    {JSON.stringify({
+      "@context": "https://schema.org",
+      "@graph": [
+        {
+          "@type": "WebSite",
+          "name": "ProTeach",
+          "url": "https://proteach.az/",
+          "potentialAction": {
+            "@type": "SearchAction",
+            "target": {
+              "@type": "EntryPoint",
+              "urlTemplate": "https://proteach.az/training?q={search_term_string}"
+            },
+            "query-input": "required name=search_term_string"
+          }
+        },
+        {
+          "@type": "EducationalOrganization",
+          "name": "ProTeach",
+          "alternateName": "ProTeach Azerbaijan",
+          "url": "https://proteach.az/",
+          "logo": "https://proteach.az/logo.png",
+          "description": "Peşəkar Tədris və Sertifikasiya Mərkəzi",
+          "address": {
+            "@type": "PostalAddress",
+            "addressCountry": "AZ"
+          },
+          "contactPoint": {
+            "@type": "ContactPoint",
+            "telephone": "+994 55 287 78 84",
+            "contactType": "customer service",
+            "areaServed": "AZ",
+            "availableLanguage": ["Azerbaijani", "English"]
+          },
+          "sameAs": [
+            "https://www.facebook.com/proteach.az",
+            "https://www.instagram.com/proteach.az",
+            "https://www.linkedin.com/company/proteach-az"
+          ]
+        }
+      ]
+    })}
+  </script>
+)}
       
     </Helmet>
   );
