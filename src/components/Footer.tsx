@@ -111,7 +111,7 @@ const Footer = () => {
     </Link>
   </li>
   <li>
-    <Link to="/training/delivery" className="text-gray-300 hover:text-accent text-sm">
+    <Link to="/training/delivery-methods" className="text-gray-300 hover:text-accent text-sm">
       {t("Çatdırılma Metodları", "Delivery Methods")}
     </Link>
   </li>
