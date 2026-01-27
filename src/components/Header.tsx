@@ -42,7 +42,7 @@ const Header = () => {
     { labelAz: "Kurs Səviyyələri", labelEn: "Course Levels", href: "/training/levels" },
     { labelAz: "Sertifikatlaşdırma Prosesi", labelEn: "Certification Process", href: "/training/process" },
     { labelAz: "Sertifikatlaşdırma Meyarları", labelEn: "Certification Criteria", href: "/training/criteria" },
-    { labelAz: "Çatdırılma Metodları", labelEn: "Delivery Methods", href: "/training/delivery" },
+    { labelAz: "Çatdırılma Metodları", labelEn: "Delivery Methods", href: "/training/delivery-methods" },
   ];
 
   const aboutSubItems = [
