@@ -37,7 +37,7 @@ const DeliveryMethodsPage = () => {
     { 
       position: 3, 
       name: t("Çatdırılma Metodları", "Delivery Methods"), 
-      item: "https://proteach.az/training/delivery" 
+      item: "https://proteach.az/training/delivery-methods" 
     },
         ]}
       />
