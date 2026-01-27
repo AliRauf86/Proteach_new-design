@@ -22,7 +22,7 @@ const DeliveryMethodsPage = () => {
           "çatdırılma metodları, təlim kursları, əyani, virtual, e-öyrənmə, self-study",
           "delivery methods, training courses, classroom, virtual, e-learning, self-study"
         )}
-        url="https://proteach.az/training/delivery" 
+        url="https://proteach.az/training/delivery-methods" 
   breadcrumb={[ 
     { 
       position: 1, 
